@@ -4,7 +4,7 @@ import time
 tk = Tk(); f = Frame(); f.pack()
 time_var = StringVar()
 time_label = Label(f, textvariable=time_var, font="Courier 60",
-    bg="Black", fg="#00B000")
+    bg="Black", fg="yellow")
 time_label.pack()
 
 def tick():

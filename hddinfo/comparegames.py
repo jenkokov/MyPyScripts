@@ -110,5 +110,6 @@ if __name__ == '__main__':
     club = ip.split('.')[2]
     comp = ip.split('.')[3]
     main()
+    sys.exit()
 
 
