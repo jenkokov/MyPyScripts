@@ -9,8 +9,6 @@ db='hdd_data'
 def create_game(game,exepath,method,ActualVerison):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    if ActualVerison == '':
-        ActualVerison = '1.0 (by Default)'
     if check_inbase(game)==0:
         cur.execute("INSERT INTO game_info(game,EXEpath,Method,ActualVersion) VALUES ('{0}','{1}',{2},'{3}') ".format(game,exepath,method,ActualVerison))
     else:

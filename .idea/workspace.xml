@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameinfo/check_version.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gameinfo/send_mail.py" />
-      <change type="DELETED" beforePath="C:\Python27\example\MyPyScripts\gameinfo\filever.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Python27\example\MyPyScripts\gameinfo\test.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hardinfo/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gameinfo/add_game.py" afterPath="$PROJECT_DIR$/gameinfo/add_game.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gameinfo/mysqlgame.py" afterPath="$PROJECT_DIR$/gameinfo/mysqlgame.py" />
@@ -30,22 +27,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="add_game.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameinfo/add_game.py">
+      <file leaf-file-name="test.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hardinfo/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="27" selection-start="1471" selection-end="1605" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="17" column="31" selection-start="395" selection-end="395" vertical-scroll-proportion="0.4808652">
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_version.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gameinfo/check_version.py">
+      <file leaf-file-name="add_game.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gameinfo/add_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="15" selection-start="361" selection-end="361" vertical-scroll-proportion="0.15665796">
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state line="44" column="19" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,28 +50,8 @@
       <file leaf-file-name="mysqlgame.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameinfo/mysqlgame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="259" selection-end="329" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysqlwork.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="27" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showgames.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="33" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -97,10 +74,11 @@
         <option value="$PROJECT_DIR$/gameinfo/test.py" />
         <option value="$PROJECT_DIR$/gameinfo/email.py" />
         <option value="$PROJECT_DIR$/gameinfo/send_mail.py" />
-        <option value="$PROJECT_DIR$/gameinfo/add_game.py" />
         <option value="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
-        <option value="$PROJECT_DIR$/gameinfo/mysqlgame.py" />
         <option value="$PROJECT_DIR$/gameinfo/check_version.py" />
+        <option value="$PROJECT_DIR$/gameinfo/mysqlgame.py" />
+        <option value="$PROJECT_DIR$/gameinfo/add_game.py" />
+        <option value="$PROJECT_DIR$/hardinfo/test.py" />
       </list>
     </option>
   </component>
@@ -136,6 +114,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,16 +186,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -217,43 +204,7 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.check_version">
-    <configuration default="false" name="add_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gameinfo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="MyPyScripts" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gameinfo/add_game.py" />
-      <option name="PARAMETERS" value="WoT 1 D:\Games\WoT\WorldOfTanks.exe" />
-      <option name="MULTIPROCESS" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="mysqlgame" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gameinfo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="MyPyScripts" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gameinfo/mysqlgame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration default="false" name="send_mail" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,6 +258,42 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hardinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="MyPyScripts" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardinfo/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="MULTIPROCESS" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="add_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gameinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="MyPyScripts" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gameinfo/add_game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="MULTIPROCESS" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -364,11 +351,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.add_game" />
-      <item index="1" class="java.lang.String" itemvalue="Python.mysqlgame" />
-      <item index="2" class="java.lang.String" itemvalue="Python.send_mail" />
-      <item index="3" class="java.lang.String" itemvalue="Python.filever" />
-      <item index="4" class="java.lang.String" itemvalue="Python.check_version" />
+      <item index="0" class="java.lang.String" itemvalue="Python.send_mail" />
+      <item index="1" class="java.lang.String" itemvalue="Python.filever" />
+      <item index="2" class="java.lang.String" itemvalue="Python.check_version" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.add_game" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -420,17 +407,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2524013" sideWeight="0.4548495" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25506938" sideWeight="0.6978818" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5451505" sideWeight="0.49839914" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5451505" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30211818" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -503,60 +490,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gameinfo/send_mail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="4" selection-start="1158" selection-end="1199" vertical-scroll-proportion="1.3994778">
-          <folding />
+        <state line="62" column="4" selection-start="1158" selection-end="1199" vertical-scroll-proportion="1.3994778" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="27" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameinfo/check_version.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.33420366">
+        <state line="26" column="22" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.73368144">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/mysqlhard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="301" selection-end="301" vertical-scroll-proportion="0.53263706">
+        <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.7545692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameinfo/mysqlgame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameinfo/add_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="27" selection-start="1471" selection-end="1605" vertical-scroll-proportion="0.0">
+        <state line="44" column="19" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
+    <entry file="file://$PROJECT_DIR$/hardinfo/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="27" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+        <state line="17" column="31" selection-start="395" selection-end="395" vertical-scroll-proportion="0.4808652">
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameinfo/mysqlgame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="259" selection-end="329" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameinfo/check_version.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="361" selection-end="361" vertical-scroll-proportion="0.15665796">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

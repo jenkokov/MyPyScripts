@@ -3,6 +3,8 @@ import mysqlgame
 import sys
 from win32com.client import Dispatch
 import ConfigParser
+import os
+
 
 def addslashes(s):
     dict = {"\0":"\\\0", "\\":"\\\\"}
@@ -30,23 +32,31 @@ def main(game, method ,game_exe):
     """
     if method == '1':
         Version = method1(game_exe)
+        if Version == '':
+            Version = '1.0 (by Default)'
         mysqlgame.create_game(game,addslashes(game_exe),method,Version)
         print 'Successful! Import version {0} for {1}.'.format(Version,game)
 
     if method == '2':
-        if len(sys.argv) != 6:
-            print 'For this method use add_game.py [NAME OF GAME] [METHOD] [PATH TO GAME EXE] [SECTION NAME] [PARAM NAME]'
-        else:
-            Version=method2(game_exe,sys.argv[4],sys.argv[5])
-            mysqlgame.create_game(game,addslashes(game_exe),method,Version)
-            print 'Successful! Import version {0} for {1}.'.format(Version,game)
+        section = raw_input('Section on INI file: ')
+        value = raw_input('Value on section {0}: '.format(section))
+        Version=method2(game_exe,section,value)
+        if Version == '':
+            Version = '1.0 (by Default)'
+        mysqlgame.create_game(game,addslashes(game_exe),method,Version)
+        print 'Successful! Import version {0} for {1}.'.format(Version,game)
 
 if __name__ == '__main__':
     ip = socket.gethostbyname(socket.gethostname())
     club = ip.split('.')[2]
     comp = ip.split('.')[3]
     config = ConfigParser.RawConfigParser()
-    if len(sys.argv)>= 4 and len(sys.argv)<= 6:
-        main(sys.argv[1], sys.argv[2],sys.argv[3])
-    else:
-        print 'Wrong numbers of parameters! Use add_game.py [NAME OF GAME] [METHOD] [PATH TO GAME EXE]'
+    while True:
+        game = raw_input('Name of new game: ')
+        game_exe = raw_input('Path to game file: ')
+        if os.path.exists(game_exe) == False:
+            print '{0} not exist!'.format(game_exe)
+            continue
+        method=raw_input('Method (1 - Version of file, 2 - From *.INI file): ')
+        main(game,method,game_exe)
+
