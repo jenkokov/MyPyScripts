@@ -9,6 +9,8 @@ db='hdd_data'
 def create_game(game,exepath,method,ActualVerison):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
+    if ActualVerison == '':
+        ActualVerison = '1.0 (by Default)'
     if check_inbase(game)==0:
         cur.execute("INSERT INTO game_info(game,EXEpath,Method,ActualVersion) VALUES ('{0}','{1}',{2},'{3}') ".format(game,exepath,method,ActualVerison))
     else:
@@ -16,6 +18,14 @@ def create_game(game,exepath,method,ActualVerison):
     cur.close()
     conn.close()
 
+def games_version(club):
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("SELECT game, EXEpath, method, ActualVersion FROM game_info WHERE InClub{0} = 1".format(club))
+    d = cur.fetchall()
+    cur.close()
+    conn.close()
+    return d
 
 def check_inbase(game):
 
@@ -34,3 +44,4 @@ def check_inbase(game):
         return 1
 
 #create_game(20,'WoT','D:\Games\WoT\WorldOfTanks.exe',1,'0.7.6')
+games_version(20)

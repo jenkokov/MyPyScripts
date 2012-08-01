@@ -42,7 +42,6 @@ def main(game, method ,game_exe):
             print 'Successful! Import version {0} for {1}.'.format(Version,game)
 
 if __name__ == '__main__':
-    dict = {}
     ip = socket.gethostbyname(socket.gethostname())
     club = ip.split('.')[2]
     comp = ip.split('.')[3]
