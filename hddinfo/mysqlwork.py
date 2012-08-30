@@ -55,7 +55,7 @@ def check_inbase(folder='hon1', club='10'):
     """
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("SELECT size FROM hdd_space WHERE Folder = '{0}' AND comp = '0'AND club = '{1}' ".format(folder, club))
+    cur.execute("SELECT size FROM hdd_space WHERE Folder = '{0}' AND comp = '0' AND club = '{1}' ".format(folder, club))
     d = cur.fetchall()
     cur.close()
     conn.close()
@@ -106,6 +106,7 @@ def write_folder(folder, size, club, comp, status='0', InRange='1'):
 def del_folder(club, comp, folder):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("DELETE FROM `hdd_space` WHERE Club='{0}' AND Comp='{1}' AND Folder='{2}' ".format(club, comp, folder))
+    cur.execute("DELETE FROM hdd_space WHERE Club='{0}' AND Comp='{1}' AND Folder='{2}'".format(club, comp, folder))
     cur.close()
     conn.close()
+

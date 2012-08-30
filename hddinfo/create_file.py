@@ -1,4 +1,3 @@
-import ConfigParser
 import os
 import comparegames
 import pymysql
@@ -6,20 +5,10 @@ import mysqlwork
 import socket
 import sys
 
-config = ConfigParser.RawConfigParser()
 
-def main():
-    d_dict = os.listdir('D:/Games')
-    for word in d_dict:
-        word=word.lower()
-        config.add_section(word)
-        print 'Calculate size for D:\Games\{0}'.format(word.capitalize())
-        config.set(word, 'size', comparegames.get_size(u'D:/Games/'+word))
-        config.set(word, 'range', '100\r')
-
-    # Writing our configuration file to 'example.cfg'
-    with open('games.ini', 'wb') as configfile:
-        config.write(configfile)
+def delfolder(folder):
+    mysqlwork.del_folder(club,comp,folder)
+    print 'Successful deleting folder \'{0}\' for club #{1}'.format(folder,club)
 
 def add_new_folder(folder):
     size = comparegames.get_size(u'D:/Games/'+folder)
@@ -48,10 +37,18 @@ def write2sql():
 
 if __name__ == '__main__':
     ip = socket.gethostbyname(socket.gethostname())
-    club = ip.split('.')[2]
     comp = '0'
-    if sys.argv[1] == 'NEW':
+    club = raw_input('Club ID (empty for this club): ')
+    if club == '':
+        club = ip.split('.')[2]
+    ques = raw_input('Deleting folder? (\'Y\' for deleting, something other for add): ')
+    if ques == 'y' or ques == 'Y':
+        dfolder = raw_input('Input folder for deleting: ')
+        delfolder(dfolder.lower())
+        sys.exit()
+    nfolder = raw_input('New folder in D:\\Games (for renew all folders type NEW): ')
+    if nfolder == 'NEW':
         write2sql()
     else:
-        add_new_folder(sys.argv[1])
+        add_new_folder(nfolder.lower())
 
