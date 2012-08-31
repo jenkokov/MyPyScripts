@@ -1,10 +1,8 @@
 import socket
 import mysqlgame
-import sys
 from win32com.client import Dispatch
 import ConfigParser
 import os
-
 
 def addslashes(s):
     dict = {"\0":"\\\0", "\\":"\\\\"}
