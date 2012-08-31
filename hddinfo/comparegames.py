@@ -24,10 +24,10 @@ def get_size(start_path = '.'):
 def delfolder(array):
     for i in array:
         #print('D:/Games/' + i)
-        if os.path.isdir(u'D:/Games/'+ i) == 1:
-            shutil.rmtree(u'D:/Games/'+ i, 1)
+        if os.path.isdir('D:/Games/'+ i) == 1:
+            shutil.rmtree('D:/Games/'+ i, 1)
         else:
-            os.remove(u"D:/Games/"+ i)
+            os.remove("D:/Games/"+ i)
         mysqlwork.del_folder(club,comp,i)
 
 def formatprint(string, massive=[]):
@@ -71,8 +71,8 @@ def check():
         i=i+1
     #print realy_list
     for words in realy_list:
-        print 'Calculate size for ' + u'D:/Games/' + words
-        dict[words] = get_size(u'D:/Games/' + words)
+        print 'Calculate size for ' + 'D:/Games/' + words
+        dict[words] = get_size('D:/Games/' + words)
         if words in expected_list != 1:
             compare.append(words)
         else:
