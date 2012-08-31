@@ -18,7 +18,10 @@ def get_size(start_path = '.'):
     for dirpath, dirnames, filenames in os.walk(start_path):
         for f in filenames:
             fp = os.path.join(dirpath, f)
-            total_size += os.path.getsize(fp)
+            try:
+                total_size += os.path.getsize(fp)
+            except:
+                continue
     return str(total_size/1024/1024)
 
 def delfolder(array):
