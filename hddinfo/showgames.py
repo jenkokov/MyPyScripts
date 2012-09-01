@@ -14,6 +14,10 @@ class Folder ():
         return f
 
 def main(club, comp):
+    all_comp = mysqlwork.read_all_comp(club)
+    if int(comp) not in all_comp:
+        print 'Comp #{0} or club #{1} not in base!'.format(comp,club)
+        return
     array = mysqlwork.read_all_folders(club, comp)
     for i in array:
         d[i[0]]=Folder(i[1],i[2],i[3],i[4])
@@ -35,6 +39,9 @@ def main(club, comp):
 
 def info_club(club):
     all_comp = mysqlwork.read_all_comp(club)
+    if len(all_comp)==0:
+        print 'Club #{0} not in base!'.format(club)
+        return
     needs_folder = mysqlwork.read_needsfolder(club)
     f = open ('D:/log/Log_for_Club{0}.txt'.format(club), 'w')
     time = datetime.datetime.now()
