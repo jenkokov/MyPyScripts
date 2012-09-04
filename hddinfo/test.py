@@ -1,4 +1,3 @@
-import mysqlwork
 import socket
 import os
 

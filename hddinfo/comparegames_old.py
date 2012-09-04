@@ -4,7 +4,6 @@ import datetime
 import shutil
 import time
 import ConfigParser
-import mysqlwork
 
 
 def check_size(f_size, accuracy, r_size):

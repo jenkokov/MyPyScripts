@@ -11,9 +11,10 @@ def read_all_folders(club, comp):
     cur = conn.cursor()
     cur.execute("SELECT folder, size, accuracy, status, InRange FROM hdd_space WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
     d = cur.fetchall()
-    return d
     cur.close()
     conn.close()
+    return d
+
 
 def update_size(club,folder,size):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
@@ -55,6 +56,7 @@ def check_inbase(folder='hon1', club='10'):
     """
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
+    folder=folder.replace('\'','\\\'')
     cur.execute("SELECT size FROM hdd_space WHERE Folder = '{0}' AND comp = '0' AND club = '{1}' ".format(folder, club))
     d = cur.fetchall()
     cur.close()
@@ -99,6 +101,7 @@ def read_needsfolder(club='10'):
 def write_folder(folder, size, club, comp, status='0', InRange='1'):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
+    folder=folder.replace('\'','\\\'')
     cur.execute("INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, status, InRange) VALUES ('{0}','{1}','100','{2}','{3}', '{4}','{5}') ".format(folder,size,club,comp,status,InRange))
     cur.close()
     conn.close()
