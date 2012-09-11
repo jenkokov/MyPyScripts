@@ -9,13 +9,13 @@ def get_time():
 
 def sendmail(email):
     print 'Sending mail to {0}...'.format(email)
-    send_mail.send_mail(email,'[TEST] AVP log from all clubs {0}'.format(get_time()),'Logs file in attachment!',"D:\\log\\AVP_Summary.txt")
+    send_mail.send_mail(email,'[TEST] AVP log from all clubs {0}'.format(get_time()),'Logs file in attachment!',log)
     print 'Successful send email!'
 
 
 def main(sorting):
     clubs=['10','11','12','20']
-    f=open("D:\\log\\AVP_Summary.txt",'w')
+    f=open(log,'w')
     for club in clubs:
         ss = '\nLogs for club #{0}'.format(club)
         print ss
@@ -41,6 +41,7 @@ def main(sorting):
 
 
 if __name__ == '__main__':
+    log='D:\\log\\AVP_Summary.txt'
     Sorting = raw_input('Sorting (default by start time): ')
     if Sorting == '':
         Sorting = 'start'
