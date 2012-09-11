@@ -65,7 +65,6 @@ def check():
     nocompare = []
     nohave = []
     i=0
-    mysqlwork.drop_comp(club, comp)
     expected_list=mysqlwork.read_needsfolder(club)
     #print expected_list
     realy_list = os.listdir('D:/Games')
@@ -80,6 +79,7 @@ def check():
             compare.append(words)
         else:
             nocompare.append(words)
+    mysqlwork.drop_comp(club, comp)
     for words in expected_list:
         if words not in realy_list != 1:
             nohave.append(words)

@@ -11,6 +11,9 @@ def delfolder(folder):
     print 'Successful deleting folder \'{0}\' for club #{1}'.format(folder,club)
 
 def add_new_folder(folder):
+    if os.path.exists(u'D:/Games/'+folder)==False:
+        print 'Can not find folder {0}!'.format(folder)
+        return
     size = comparegames.get_size(u'D:/Games/'+folder)
     if mysqlwork.check_inbase(folder,club)==1:
         mysqlwork.update_size(club,folder,size)
