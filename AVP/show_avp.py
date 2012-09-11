@@ -9,7 +9,7 @@ def get_time():
 
 def sendmail(email):
     print 'Sending mail to {0}...'.format(email)
-    send_mail.send_mail(email,'[TEST] AVP log from all clubs {0}'.format(get_time()),'Logs file in attachment!',log)
+    send_mail.send_mail(email,'AVP log from all clubs {0}'.format(get_time()),'Logs file in attachment!',log)
     print 'Successful send email!'
 
 
@@ -21,7 +21,7 @@ def main(sorting):
         print ss
         f.write(ss+'\n')
 
-        ss = '+'.ljust(73,'-')+'+\n|Comp'.ljust(8)+'|Start'.ljust(26)+'|End'.ljust(26)+'|Status'.ljust(15)+'|'
+        ss = '+'.ljust(73,'-')+'+\n|Comp'.ljust(8)+'|Start'.ljust(26)+'|End'.ljust(26)+'|Status'.ljust(15)+'|\n+'+''.ljust(72,'-')+'+'
         print ss
         f.write(ss+'\n')
 

@@ -11,7 +11,7 @@ send_from = 'jenko.kov@gmail.com'
 def send_mail(send_to, subject, text, file):
 
     msg = MIMEMultipart()
-    msg['From'] = 'jenko.kov@gmail.com'
+    msg['From'] = 'ITLand Root'
     msg['To'] = send_to
     msg['Date'] = formatdate(localtime=True)
     msg['Subject'] = subject
@@ -24,6 +24,7 @@ def send_mail(send_to, subject, text, file):
     Encoders.encode_base64(part)
     part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(file))
     msg.attach(part)
+
 
     server=smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
