@@ -1,3 +1,4 @@
+import os
 import sys
 import socket
 import time
@@ -8,14 +9,16 @@ def get_time():
     return '{0}-{1}-{2} / {3}:{4}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2),)
 
 def main(argv):
-    f=open('D:\\log\log.txt','a')
-    if argv == 'start':
-        status = 0
-        f.write('{0} Starting AVP...\n'.format(get_time().ljust(25)))
-    if argv == 'end':
-        status = 1
-        f.write('{0} Finishing AVP!\n'.format(get_time().ljust(25)))
-    f.close()
+    status = 1
+    if os.path.exists('D:\\'):
+        f=open('D:\\log\log.txt','a')
+        if argv == 'start':
+            status = 0
+            f.write('{0} Starting AVP...\n'.format(get_time().ljust(25)))
+        if argv == 'end':
+            status = 1
+            f.write('{0} Finishing AVP!\n'.format(get_time().ljust(25)))
+        f.close()
     if mysqlavp.check_inbase(club,comp) == 0:
         mysqlavp.insert(club,comp,argv,get_time(),status)
     else:
