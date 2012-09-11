@@ -7,10 +7,10 @@ user='hdd_datauser'
 passwd='oknej1984'
 db='hdd_data'
 
-def insert(club,comp,position,time):
+def insert(club,comp,position,time,status):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("INSERT INTO avp(club,comp,{0}) VALUES ('{1}','{2}','{3}') ".format(position, club,comp,time))
+    cur.execute("INSERT INTO avp(club,comp,{0},status) VALUES ('{1}','{2}','{3}','{4}') ".format(position, club,comp,time,status))
     cur.close()
     conn.close()
 
@@ -30,9 +30,18 @@ def check_inbase(club,comp):
     else:
         return 1
 
-def update(club,comp,position,time):
+def update(club,comp,position,time,status):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("UPDATE avp SET {0}='{1}' WHERE club={2} and comp = {3}".format(position,time,club,comp))
+    cur.execute("UPDATE avp SET {0}='{1}', status = '{4}' WHERE club={2} and comp = {3}".format(position,time,club,comp,status))
     cur.close()
     conn.close()
+
+def select_club(club, sorting):
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute('SELECT * FROM avp WHERE club={0} order by {1}'.format(club,sorting))
+    d = cur.fetchall()
+    cur.close()
+    conn.close()
+    return d
