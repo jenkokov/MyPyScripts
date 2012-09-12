@@ -25,9 +25,12 @@ def send_mail(send_to, subject, text, file):
     part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(file))
     msg.attach(part)
 
-
     server=smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
     server.login('jenko.kov','efi42dekut')
     server.sendmail(send_from, send_to, msg.as_string())
     server.quit()
+
+    #server=smtplib.SMTP('172.16.20.254:25')
+    #server.sendmail(send_from, send_to, msg.as_string())
+    #server.quit()
