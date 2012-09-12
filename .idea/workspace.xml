@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/avp.py" afterPath="$PROJECT_DIR$/AVP/avp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/mysqlavp.py" afterPath="$PROJECT_DIR$/AVP/mysqlavp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/utorrent.py" afterPath="$PROJECT_DIR$/AVP/utorrent.py" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -542,7 +539,11 @@
       <created>1347446204875</created>
       <updated>1347446204875</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Revision#21">
+      <created>1347454451434</created>
+      <updated>1347454451434</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -637,7 +638,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revision#20" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revision#21" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -660,6 +661,7 @@
     <MESSAGE value="Revision#16" />
     <MESSAGE value="Revision#17" />
     <MESSAGE value="Revision#20" />
+    <MESSAGE value="Revision#21" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,7 +681,7 @@
           <option name="timeStamp" value="5" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="401" />
+      <option name="time" value="404" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
