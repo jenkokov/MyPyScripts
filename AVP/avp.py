@@ -38,7 +38,7 @@ def main(argv):
             else:
                 needContinue = False
                 f=open('C:\\logs\\errors.txt','a')
-                f.write('{0} Error connect to DB for writing AVP info.\n'.format(get_time().ljust(25)))
+                f.write('{0} [AVP] Error connect to DB for writing AVP info.\n'.format(get_time().ljust(25)))
                 f.close()
 
 

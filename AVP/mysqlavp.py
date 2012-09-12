@@ -30,6 +30,35 @@ def check_inbase(club,comp):
     else:
         return 1
 
+def check_torrent(club,comp,torrent):
+    """
+    Check field in database. If field exist return 1, else return 0.
+    """
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("SELECT time FROM utorrent WHERE club={0} and comp = {1} and torrent='{2}'".format(club, comp,torrent))
+    d = cur.fetchall()
+    cur.close()
+    conn.close()
+    if d == ():
+        return 0
+    else:
+        return 1
+
+def insert_torrent(club,comp,torrent,time,status):
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("INSERT INTO utorrent (club,comp,torrent,status,time) VALUES ('{0}','{1}','{2}','{3}','{4}')".format(club,comp,torrent,status,time))
+    cur.close()
+    conn.close()
+
+def update_torrent(club,comp,torrent,time,status):
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("UPDATE utorrent SET time='{0}', status='{1}' WHERE club={2} and comp = {3} and torrent = '{4}'".format(time,status,club,comp,torrent))
+    cur.close()
+    conn.close()
+
 def update(club,comp,position,time,status):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
