@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyPyScripts.iml" afterPath="$PROJECT_DIR$/.idea/MyPyScripts.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/send_mail.py" afterPath="$PROJECT_DIR$/AVP/send_mail.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/show_avp.py" afterPath="$PROJECT_DIR$/AVP/show_avp.py" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,13 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show_avp.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show_avp.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="12" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state line="57" column="5" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.9361702">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,7 +50,7 @@
       <file leaf-file-name="avp.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVP/avp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="4" selection-start="601" selection-end="1384" vertical-scroll-proportion="0.0">
+            <state line="36" column="35" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,10 +65,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utorrent.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="send_mail.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVP/send_mail.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utorrent.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="17" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.8615917">
+            <state line="27" column="17" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -108,21 +119,21 @@
         <option value="$PROJECT_DIR$/TEST/show_avp.py" />
         <option value="$PROJECT_DIR$/gameinfo/send_mail.py" />
         <option value="$PROJECT_DIR$/AVP/send_mail_test.py" />
-        <option value="$PROJECT_DIR$/AVP/show_avp.py" />
         <option value="$PROJECT_DIR$/AVP/test.py" />
-        <option value="$PROJECT_DIR$/AVP/send_mail.py" />
         <option value="$PROJECT_DIR$/TEST/print_argv.py" />
         <option value="$PROJECT_DIR$/AVP/avp.py" />
         <option value="$PROJECT_DIR$/AVP/mysqlavp.py" />
         <option value="$PROJECT_DIR$/AVP/utorrent.py" />
+        <option value="$PROJECT_DIR$/AVP/send_mail.py" />
+        <option value="$PROJECT_DIR$/AVP/show_avp.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="1044" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -150,6 +161,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,26 +275,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -291,7 +302,7 @@
       <recent name="C:\Python27\Example\MyPyScripts\AVP" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.utorrent">
+  <component name="RunManager" selected="Python.show_avp">
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -469,8 +480,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.utorrent" />
-        <item index="1" class="java.lang.String" itemvalue="Python.show_avp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.show_avp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.utorrent" />
         <item index="2" class="java.lang.String" itemvalue="Python.send_mail" />
         <item index="3" class="java.lang.String" itemvalue="Python.test" />
         <item index="4" class="java.lang.String" itemvalue="Python.avp" />
@@ -579,25 +590,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277592" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32762557" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1072572" sideWeight="0.6722408" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.108323134" sideWeight="0.6723744" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39687848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29654405" sideWeight="0.50053364" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29431438" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.293379" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292011" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -673,7 +684,7 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <breakpoint type="django-exception">
-          <properties exception="VariableDoesNotExist" />
+          <properties />
           <option name="timeStamp" value="4" />
         </breakpoint>
         <breakpoint type="javascript-exception">
@@ -685,6 +696,22 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="17" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVP/mysqlavp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="105" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TEST/test_download.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -720,15 +747,6 @@
         <state line="7" column="16" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AVP/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="9" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
@@ -736,23 +754,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/pymysql/__init__.py">
+    <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="3144" selection-end="3144" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="27" column="17" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/pymysql/cursors.py">
+    <entry file="file://$PROJECT_DIR$/AVP/mysqlavp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2257" selection-end="2257" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/send_mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="9" selection-start="861" selection-end="861" vertical-scroll-proportion="0.7906977">
+        <state line="50" column="105" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -766,24 +779,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/avp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="601" selection-end="1384" vertical-scroll-proportion="0.0">
+        <state line="36" column="35" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/mysqlavp.py">
+    <entry file="file://$PROJECT_DIR$/AVP/send_mail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="105" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
+    <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="17" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.8615917">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state line="57" column="5" selection-start="1715" selection-end="1715" vertical-scroll-proportion="0.9361702">
+          <folding />
         </state>
       </provider>
     </entry>
