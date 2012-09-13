@@ -20,10 +20,9 @@ def get_time():
     return '{0}-{1}-{2} / {3}:{4}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2))
 
 def sendmail(mail):
-    for m in mail:
-        #print 'Sending mail to {0}...'.format(email)
-        send_mail.send_mail(m,'AVP log from all clubs {0}'.format(get_time()),'Logs file in attachment!',log)
-        #print 'Successful send email!'
+    print 'Sending mail to {0}...'.format(mail)
+    send_mail.send_mail(mail,'AVP log from all clubs {0}'.format(get_time()),'Logs file in attachment!',log)
+    print 'Successful send email!'
 
 
 def main(sorting):
@@ -31,11 +30,11 @@ def main(sorting):
     f=open(log,'w')
     for club in clubs:
         ss = '\nLogs for club #{0}'.format(club)
-        #print ss
+        print ss
         f.write(ss+'\n')
 
         ss = '+'.ljust(93,'-')+'+\n|Comp'.ljust(8)+'|Start'.ljust(26)+'|End'.ljust(26)+'|Status'.ljust(15)+'|Duration'.ljust(20)+'|\n+'+''.ljust(92,'-')+'+'
-        #print ss
+        print ss
         f.write(ss+'\n')
 
         d = mysqlavp.select_club(club,sorting)
@@ -45,27 +44,27 @@ def main(sorting):
             if i[5] == 1:
                 status='Successful!'
             ss = '|'+str(i[1]).ljust(5)+'|'+str(i[2]).ljust(25)+'|'+str(i[3]).ljust(25)+'|'+status.ljust(14)+'|'+duration.ljust(19)+'|'
-            #print ss
+            print ss
             f.write(ss+'\n')
 
         ss = '+'.ljust(93,'-')+'+'
-        #print ss
+        print ss
         f.write(ss+'\n')
     f.close()
 
 
 if __name__ == '__main__':
-    log='/tmp/AVP_Summary.txt'
-    #log = 'D:\\log\\AVP_Summary.txt'
-    #Sorting = raw_input('Sorting (default by start time): ')
-    #if Sorting == '':
-    #    Sorting = 'start'
-    #email = raw_input('E-mail for send logs (if no need empty): ')
+    #log='/tmp/AVP_Summary.txt'
+    log = 'D:\\log\\AVP_Summary.txt'
+    Sorting = raw_input('Sorting (default by start time): ')
+    if Sorting == '':
+        Sorting = 'start'
+    mail = raw_input('E-mail for send logs (if no need empty): ')
     d = []
-    #main(Sorting)
-    #if email != '':
-    #    sendmail(email)
-    Sorting = 'start'
-    mail = ['jenko.kov@gmail.com','diablik@online.ua','shad.itland@gmail.com']
     main(Sorting)
-    sendmail(mail)
+    if mail != '':
+        sendmail(mail)
+    Sorting = 'start'
+    #mail = ['jenko.kov@gmail.com','diablik@online.ua','shad.itland@gmail.com']
+    main(Sorting)
+    #sendmail(mail)

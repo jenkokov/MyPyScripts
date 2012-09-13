@@ -3,9 +3,16 @@ import time
 import socket
 import mysqlavp
 
-def get_time():
+def get_datetime(val='datetime'):
     t = time.localtime()
-    return '{0}-{1}-{2} / {3}:{4}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2),)
+    if val == 'datetime':
+        return '{0}-{1}-{2} / {3}:{4}:{5}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
+    if val == 'date':
+        return '{0}-{1}-{2}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2))
+    if val == 'time':
+        return '{0}:{1}:{2}'.format(str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
+
+
 
 def main():
     f=open('D:\\log\\torrent.log','a')
@@ -13,9 +20,9 @@ def main():
     status = status_dict[sys.argv[2]]
     if sys.argv[2] == '1':
         ff = open ('C:\\dslogon\\errors.log','a')
-        ff.write('{0} [uTorrent] Error of torrent {1}!\n'.format(get_time().ljust(25),torrent))
+        ff.write('{0} [uTorrent] Error of torrent {1}!\n'.format(get_datetime().ljust(25),torrent))
         ff.close()
-    ss = '{0} Torrent: {1} Status: {2}\n'.format(get_time().ljust(25), torrent.ljust(15),status)
+    ss = '{0} Torrent: {1} Status: {2}\n'.format(get_datetime().ljust(25), torrent.ljust(15),status)
     f.write(ss)
     f.close()
 
@@ -24,9 +31,9 @@ def main():
     while needContinue:
         try:
             if mysqlavp.check_torrent(club,comp,torrent) == 0:
-                mysqlavp.insert_torrent(club,comp,torrent,get_time(),status)
+                mysqlavp.insert_torrent(club,comp,torrent,get_datetime('date'),get_datetime('time'),status)
             else:
-                mysqlavp.update_torrent(club,comp,torrent,get_time(),status)
+                mysqlavp.update_torrent(club,comp,torrent,get_datetime('date'),get_datetime('time'),status)
             needContinue = False
         except:
             count=count+1
@@ -37,7 +44,7 @@ def main():
             else:
                 needContinue = False
                 f=open('C:\\logs\\errors.txt','a')
-                f.write('{0} [uTorrent] Error connect to DB for writing uTorrent info.\n'.format(get_time().ljust(25)))
+                f.write('{0} [uTorrent] Error connect to DB for writing uTorrent info.\n'.format(get_datetime().ljust(25)))
                 f.close()
 
     sys.exit()
