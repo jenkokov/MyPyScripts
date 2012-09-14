@@ -40,15 +40,17 @@ def formatprint(string, massive=[]):
     f.write(string + '\n')
     for i in massive:
         i=i.lower()
-        if os.path.exists('D:/Games/' + i) and mysqlwork.check_inbase(i, club):
-            checked = check_size(mysqlwork.read(i,club)[0],mysqlwork.read(i,club)[1],dict[i])
-            print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(mysqlwork.read(i,club)[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])
-            f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(mysqlwork.read(i,club)[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])+ '\n')
+        checking = mysqlwork.check_inbase(i, club)
+        if os.path.exists('D:/Games/' + i) and checking:
+            read = mysqlwork.read(i,club)
+            checked = check_size(read[0],read[1],dict[i])
+            print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])
+            f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])+ '\n')
             if checked[1] == 0:
                 mysqlwork.write_folder(i, dict[i], club, comp, 1,0)
             else:
                 mysqlwork.write_folder(i, dict[i], club, comp, 1,1)
-        if mysqlwork.check_inbase(i, club)== 0 and os.path.exists('D:/Games/' + i):
+        if checking == 0 and os.path.exists('D:/Games/' + i):
             print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + 'No data for this folder!'
             f.write('  ' + i.ljust(30) + '\t' + dict[i] + ' MB' + '\n')
             mysqlwork.write_folder(i, dict[i], club, comp, 0)

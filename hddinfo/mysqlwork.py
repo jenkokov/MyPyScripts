@@ -39,7 +39,6 @@ def read_all_folders(club, comp):
     count=0
     while needContinue:
         try:
-
             conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
             cur = conn.cursor()
             cur.execute("SELECT folder, size, accuracy, status, InRange FROM hdd_space WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
@@ -47,6 +46,7 @@ def read_all_folders(club, comp):
             cur.close()
             conn.close()
             needContinue = False
+
         except:
             count=count+1
             if count <6:
@@ -56,9 +56,11 @@ def read_all_folders(club, comp):
             else:
                 needContinue = False
                 f=open('C:\\logs\\errors.txt','a')
-                f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
+                f.write('{0} [COMPAREGAMES] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
                 f.close()
+                d = ()
     return d
+
 
 
 def update_size(club,folder,size):
@@ -76,13 +78,32 @@ def read(folder='pointblank', club='10'):
     First - size
     Second - accuracy
     """
-    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
-    cur = conn.cursor()
-    cur.execute("SELECT size, accuracy FROM hdd_space WHERE Folder = '{0}' AND comp = '0' AND club = '{1}' ".format(folder, club))
-    d = cur.fetchall()
-    f = d[0]
-    cur.close()
-    conn.close()
+
+    needContinue = True
+    count=0
+    while needContinue:
+        try:
+            conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+            cur = conn.cursor()
+            cur.execute("SELECT size, accuracy FROM hdd_space WHERE Folder = '{0}' AND comp = '0' AND club = '{1}' ".format(folder, club))
+            d = cur.fetchall()
+            f = d[0]
+            cur.close()
+            conn.close()
+            needContinue = False
+        except:
+            count=count+1
+            if count <6:
+                print 'Error to connect to DB! Try {0} of 5. Retry after 20 second... '.format(count)
+                time.sleep(15)
+                needContinue = True
+            else:
+                needContinue = False
+                f=open('C:\\logs\\errors.txt','a')
+                f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
+                f.close()
+                f = ()
+
     return f
 
 def drop_comp(club='10', comp='108'):
@@ -160,3 +181,5 @@ def del_folder(club, comp, folder):
     cur.close()
     conn.close()
 
+if __name__ == "__main__":
+    print 'System file! Can\'t run!'
