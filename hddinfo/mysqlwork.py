@@ -1,4 +1,5 @@
 import pymysql
+import time
 
 host='172.16.10.189'
 port=3306
@@ -6,13 +7,57 @@ user='hdd_datauser'
 passwd='oknej1984'
 db='hdd_data'
 
+def get_datetime(val='datetime'):
+    t = time.localtime()
+    if val == 'datetime':
+        return '{0}-{1}-{2} / {3}:{4}:{5}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
+    if val == 'date':
+        return '{0}-{1}-{2}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2))
+    if val == 'time':
+        return '{0}:{1}:{2}'.format(str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
+
+needContinue = True
+count=0
+while needContinue:
+    try:
+
+        needContinue = False
+    except:
+        count=count+1
+        if count <6:
+            print 'Error to connect to DB! Try {0} of 5. Retry after 20 second... '.format(count)
+            time.sleep(15)
+            needContinue = True
+        else:
+            needContinue = False
+            f=open('C:\\logs\\errors.txt','a')
+            f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
+            f.close()
+
 def read_all_folders(club, comp):
-    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
-    cur = conn.cursor()
-    cur.execute("SELECT folder, size, accuracy, status, InRange FROM hdd_space WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
-    d = cur.fetchall()
-    cur.close()
-    conn.close()
+    needContinue = True
+    count=0
+    while needContinue:
+        try:
+
+            conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+            cur = conn.cursor()
+            cur.execute("SELECT folder, size, accuracy, status, InRange FROM hdd_space WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
+            d = cur.fetchall()
+            cur.close()
+            conn.close()
+            needContinue = False
+        except:
+            count=count+1
+            if count <6:
+                print 'Error to connect to DB! Try {0} of 5. Retry after 20 second... '.format(count)
+                time.sleep(15)
+                needContinue = True
+            else:
+                needContinue = False
+                f=open('C:\\logs\\errors.txt','a')
+                f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
+                f.close()
     return d
 
 
@@ -22,6 +67,8 @@ def update_size(club,folder,size):
     cur.execute("UPDATE hdd_space SET Size={2} WHERE club={0} and comp=0 and folder='{1}'".format(club, folder, size))
     cur.close()
     conn.close()
+
+
 def read(folder='pointblank', club='10'):
 
     """

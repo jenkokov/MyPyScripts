@@ -66,5 +66,4 @@ if __name__ == '__main__':
         sendmail(mail)
     Sorting = 'start'
     #mail = ['jenko.kov@gmail.com','diablik@online.ua','shad.itland@gmail.com']
-    main(Sorting)
     #sendmail(mail)

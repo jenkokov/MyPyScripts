@@ -88,23 +88,23 @@ def select_torrent(club,sdate,fdate):
     conn.close()
     return d
 
-def get_comp(table,club):
+def get_comp(table,club,sdate,fdate):
     """
     Select all comp for club in table.
     """
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("SELECT comp FROM {0} WHERE club='{1}'".format(table,club))
+    cur.execute("SELECT comp FROM {0} WHERE club='{1}' and date >= '{2}' and date <= '{3}'".format(table,club,sdate,fdate))
     d = cur.fetchall()
     cur.close()
     conn.close()
     return d
 
 
-def check_comp(club):
+def check_comp(club,sdate,fdate):
     comps = []
     ncomps = []
-    all_comps = get_comp('utorrent',club)
+    all_comps = get_comp('utorrent',club,sdate,fdate)
     compcount=0
     if club == '10':
         compcount = range(1,98)

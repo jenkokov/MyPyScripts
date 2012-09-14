@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AVP/show_torrent.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyPyScripts.iml" afterPath="$PROJECT_DIR$/.idea/MyPyScripts.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/mysqlavp.py" afterPath="$PROJECT_DIR$/AVP/mysqlavp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/show_avp.py" afterPath="$PROJECT_DIR$/AVP/show_avp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/test.py" afterPath="$PROJECT_DIR$/AVP/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/utorrent.py" afterPath="$PROJECT_DIR$/AVP/utorrent.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AVP/show_torrent.py" afterPath="$PROJECT_DIR$/AVP/show_torrent.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/mysqlwork.py" afterPath="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,16 +34,16 @@
       <file leaf-file-name="show_avp.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="18" selection-start="947" selection-end="952" vertical-scroll-proportion="0.0">
+            <state line="46" column="17" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_torrent.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show_torrent.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVP/show_torrent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="50" selection-start="955" selection-end="955" vertical-scroll-proportion="0.33333334">
+            <state line="16" column="19" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -62,7 +63,7 @@
       <file leaf-file-name="mysqlavp.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVP/mysqlavp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="23" selection-start="3871" selection-end="3871" vertical-scroll-proportion="0.0">
+            <state line="96" column="121" selection-start="3418" selection-end="3418" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,8 +72,30 @@
       <file leaf-file-name="utorrent.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="21" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+            <state line="28" column="0" selection-start="954" selection-end="1848" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comparegames.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="28" selection-start="2256" selection-end="2256" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysqlwork.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="4" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.6532374">
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hddinfo/test.py" />
         <option value="$PROJECT_DIR$/hddinfo/comparegames_old.py" />
         <option value="$PROJECT_DIR$/hddinfo/comparegames.py" />
         <option value="$PROJECT_DIR$/hddinfo/create_file.py" />
@@ -105,18 +127,19 @@
         <option value="$PROJECT_DIR$/AVP/avp.py" />
         <option value="$PROJECT_DIR$/AVP/send_mail.py" />
         <option value="$PROJECT_DIR$/AVP/test.py" />
-        <option value="$PROJECT_DIR$/AVP/utorrent.py" />
         <option value="$PROJECT_DIR$/AVP/show_avp.py" />
-        <option value="$PROJECT_DIR$/AVP/mysqlavp.py" />
         <option value="$PROJECT_DIR$/AVP/show_torrent.py" />
+        <option value="$PROJECT_DIR$/AVP/mysqlavp.py" />
+        <option value="$PROJECT_DIR$/AVP/utorrent.py" />
+        <option value="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1036" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -263,11 +286,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -285,7 +308,7 @@
       <recent name="C:\Python27\Example\MyPyScripts\AVP" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.show_torrent">
+  <component name="RunManager" selected="Python.show_avp">
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -463,8 +486,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.show_torrent" />
-        <item index="1" class="java.lang.String" itemvalue="Python.show_avp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.show_avp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.show_torrent" />
         <item index="2" class="java.lang.String" itemvalue="Python.utorrent" />
         <item index="3" class="java.lang.String" itemvalue="Python.test" />
         <item index="4" class="java.lang.String" itemvalue="Python.send_mail" />
@@ -577,24 +600,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32762557" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19732441" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10954712" sideWeight="0.6723744" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12646745" sideWeight="0.8026756" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39687848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29654405" sideWeight="0.50053364" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23173515" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2954292" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292011" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -680,20 +703,10 @@
           <option name="timeStamp" value="5" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="404" />
+      <option name="time" value="530" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TEST/test_download.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TEST/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="65" selection-end="307" vertical-scroll-proportion="0.11486486" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gamerestore/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -721,23 +734,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TEST/print_argv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="18" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/avp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="36" column="35" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/test.py">
@@ -749,37 +751,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TEST/show_comp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="10" selection-start="1246" selection-end="1261" vertical-scroll-proportion="0.81635803">
-          <folding />
-        </state>
+        <state line="45" column="10" selection-start="1246" selection-end="1261" vertical-scroll-proportion="0.81635803" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/send_mail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="954" selection-end="1848" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/mysqlavp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="23" selection-start="3871" selection-end="3871" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="18" selection-start="947" selection-end="952" vertical-scroll-proportion="0.0">
+        <state line="96" column="121" selection-start="3418" selection-end="3418" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/show_torrent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="50" selection-start="955" selection-end="955" vertical-scroll-proportion="0.33333334">
+        <state line="16" column="19" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="17" selection-start="1521" selection-end="1521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="28" selection-start="2256" selection-end="2256" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="4" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.6532374">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

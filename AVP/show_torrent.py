@@ -26,7 +26,7 @@ def main():
     clubs=['10','11','12','20']
     for club in clubs:
         d = mysqlavp.select_torrent(club,sdate,fdate)
-        ncomps = mysqlavp.check_comp(club)
+        ncomps = mysqlavp.check_comp(club, sdate,fdate)
         if d == ():
             ss = 'No info for club #{0}'.format(club)
             print ss
