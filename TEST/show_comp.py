@@ -15,8 +15,16 @@ def get_comp(table,club):
     conn.close()
     return d
 
+def write_comp(club,comp):
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("INSERT INTO avp(club,comp) VALUES ('{0}','{1}') ".format(club,comp))
+    cur.close()
+    conn.close()
+
+
 def main():
-    table=raw_input('Table for show: ')
+    table='avp'
     club=raw_input('Input ID club: ')
     all_comps = get_comp(table,club)
     compcount=0
@@ -43,6 +51,7 @@ def main():
     string=''
     for comp in ncomps:
         string = string + str(comp) + ', '
+        write_comp(club,comp)
     print string[:-2]+'.'
 
 
