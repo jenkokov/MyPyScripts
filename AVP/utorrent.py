@@ -43,7 +43,7 @@ def main():
                 needContinue = True
             else:
                 needContinue = False
-                f=open('C:\\logs\\errors.txt','a')
+                f=open('C:\\dslogon\\errors.log','a')
                 f.write('{0} [uTorrent] Error connect to DB for writing uTorrent info.\n'.format(get_datetime().ljust(25)))
                 f.close()
 
