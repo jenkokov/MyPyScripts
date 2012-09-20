@@ -3,7 +3,7 @@ import sys
 import shutil
 
 def main():
-    need_folders = ['Games', 'log']
+    need_folders = ['Games', 'log','info','work']
     work_folder=u'D:/'
     all_folders=os.listdir(work_folder)
     for name in all_folders:
