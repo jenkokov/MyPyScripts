@@ -10,9 +10,9 @@ def insert_data(club,comp,param,value):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
     if check_inbase(club,comp)==0:
-        cur.execute("INSERT INTO hard_space(club,comp,{0}) VALUES ('{1}','{2}','{3}') ".format(param,club,comp,value))
+        cur.execute("INSERT INTO hard_space(club,comp,{0},sync_status) VALUES ('{1}','{2}','{3}','0') ".format(param,club,comp,value))
     else:
-        cur.execute("UPDATE hard_space SET {2}='{3}' WHERE club={0} and comp = {1}".format(club, comp,param,value))
+        cur.execute("UPDATE hard_space SET {2}='{3}', sync_status = '0' WHERE club={0} and comp = {1}".format(club, comp,param,value))
     cur.close()
     conn.close()
 

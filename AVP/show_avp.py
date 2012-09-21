@@ -5,12 +5,12 @@ from datetime import datetime
 
 def get_duration(s,e):
     #duration = get_duration(i[2].split(' / ')[1], i[3].split(' / ')[1]
-    if s=='' or e=='':
+    if s==None or e==None:
         return 'No data!'
-    start = s.split(' / ')[1]
-    end = e.split(' / ')[1]
-    t1 = datetime.strptime(start,'%H:%M')
-    t2 = datetime.strptime(end,'%H:%M')
+    #start = s.split(' / ')[1]
+    #end = e.split(' / ')[1]
+    t1 = datetime.strptime(str(s),'%Y-%m-%d %H:%M:%S')
+    t2 = datetime.strptime(str(e),'%Y-%m-%d %H:%M:%S')
     return str((t2 - t1))
 
 
@@ -39,6 +39,7 @@ def main(sorting):
 
         d = mysqlavp.select_club(club,sorting)
         for i in d:
+            #print i
             duration = get_duration(i[2], i[3])
             status='Not finished!'
             if i[5] == 1:

@@ -10,7 +10,7 @@ db='hdd_data'
 def insert(club,comp,position,time,status):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("INSERT INTO avp(club,comp,{0},status) VALUES ('{1}','{2}','{3}','{4}') ".format(position, club,comp,time,status))
+    cur.execute("INSERT INTO avp(club,comp,{0},status,sync_status) VALUES ('{1}','{2}','{3}','{4}','0') ".format(position, club,comp,time,status))
     cur.close()
     conn.close()
 
@@ -62,7 +62,7 @@ def update_torrent(club,comp,torrent,date,time,status):
 def update(club,comp,position,time,status):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("UPDATE avp SET {0}='{1}', status = '{4}' WHERE club={2} and comp = {3}".format(position,time,club,comp,status))
+    cur.execute("UPDATE avp SET {0}='{1}', status = '{4}', sync_status = '0' WHERE club={2} and comp = {3}".format(position,time,club,comp,status))
     cur.close()
     conn.close()
 

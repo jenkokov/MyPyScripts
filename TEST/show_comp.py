@@ -51,7 +51,7 @@ def main():
     string=''
     for comp in ncomps:
         string = string + str(comp) + ', '
-        write_comp(club,comp)
+        #write_comp(club,comp)
     print string[:-2]+'.'
 
 
