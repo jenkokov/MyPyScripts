@@ -4,11 +4,8 @@ import send_mail
 from datetime import datetime
 
 def get_duration(s,e):
-    #duration = get_duration(i[2].split(' / ')[1], i[3].split(' / ')[1]
     if s==None or e==None:
         return 'No data!'
-    #start = s.split(' / ')[1]
-    #end = e.split(' / ')[1]
     t1 = datetime.strptime(str(s),'%Y-%m-%d %H:%M:%S')
     t2 = datetime.strptime(str(e),'%Y-%m-%d %H:%M:%S')
     return str((t2 - t1))
@@ -39,7 +36,6 @@ def main(sorting):
 
         d = mysqlavp.select_club(club,sorting)
         for i in d:
-            #print i
             duration = get_duration(i[2], i[3])
             status='Not finished!'
             if i[5] == 1:
@@ -55,7 +51,6 @@ def main(sorting):
 
 
 if __name__ == '__main__':
-    #log='/tmp/AVP_Summary.txt'
     log = 'D:\\log\\AVP_Summary.txt'
     Sorting = raw_input('Sorting (default by start time): ')
     if Sorting == '':
@@ -66,5 +61,3 @@ if __name__ == '__main__':
     if mail != '':
         sendmail(mail)
     Sorting = 'start'
-    #mail = ['jenko.kov@gmail.com','diablik@online.ua','shad.itland@gmail.com']
-    #sendmail(mail)
