@@ -81,7 +81,7 @@ def output(event):
     #f.write(html)
     #f.close()
 
-
+#http://api.vkontakte.ru/oauth/authorize?client_id=2223684&scope=audio&redirect_uri=http://api.vk.com/blank.html&display=page&response_type=token
 
 from Tkinter import *
 root = Tk()
@@ -96,13 +96,13 @@ number = 0
 status= Label(root, text = 'Ready!', height=2)
 token_label=Label(root, text = 'Token:')
 token = Entry(root,width=30)
-token.insert(0,'1f0a1e304f7b72a91f3f22559d1f469ded11f6b1f6773a17ba207024c543f4d')
+token.insert(0,'3cbb42b96c55fdc53c8e7edcf13cf7c16433cda3cd62f286c54ae45e014356853993d65')
 id_label=Label(root, text = 'User ID:')
 id = Entry(root,width=30)
-id.insert(0,'7171481')
+id.insert(0,'63086591')
 folder_label=Label(root, text = 'Folder:')
 folder = Entry(root,width=30)
-folder.insert(0,'C:\\Downloads\\VKMusic\\')
+folder.insert(0,'D:\\Downloads\\VKMusic\\')
 but = Button(root,text="Output")
 tex = Text(root,width=20,height=3,font="12",wrap=WORD)
 
