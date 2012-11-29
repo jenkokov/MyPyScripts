@@ -10,7 +10,7 @@ db='hdd_data'
 def get_datetime(val='datetime'):
     t = time.localtime()
     if val == 'datetime':
-        return '{0}-{1}-{2} / {3}:{4}:{5}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
+        return '{0}-{1}-{2} {3}:{4}:{5}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
     if val == 'date':
         return '{0}-{1}-{2}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2))
     if val == 'time':
@@ -171,6 +171,26 @@ def write_folder(folder, size, club, comp, status='0', InRange='1'):
     cur = conn.cursor()
     folder=folder.replace('\'','\\\'')
     cur.execute("INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, status, InRange, sync_status) VALUES ('{0}','{1}','100','{2}','{3}', '{4}','{5}','0') ".format(folder,size,club,comp,status,InRange))
+    cur.close()
+    conn.close()
+
+def write_mass(array):
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    values = 'INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, status, InRange, sync_status, time) VALUES '
+    for i in array:
+        values = values + '(\'' + \
+                 str(i[0].replace('\'','\\\'')) + '\',\'' + \
+                 str(i[1]) + \
+                 '\',\'100\',\'' + \
+                 str(i[2]) + '\',\'' + \
+                 str(i[3]) + '\',\'' + \
+                 str(i[4]) + '\',\'' + \
+                 str(i[5]) + \
+                 '\',\'0\',\'' + \
+                 str(get_datetime()) +'\'),'
+    values=values[0:-1]
+    cur.execute(values)
     cur.close()
     conn.close()
 

@@ -29,7 +29,7 @@ def main(club, comp):
             print '|'+name[:25].ljust(25)+'| no data'.ljust(12)+'| '+str(ideal_size[0]).ljust(10) +'| '+ str(ideal_size[0]).ljust(10)+'| NO EXISTS!|'
     for name in sorted(d):
         status='Need'
-        if d[name].status == 0:
+        if name not in needs_folder:
             status = 'NO NEED!'
             print '|'+name[:25].ljust(25)+'| '+ str(d[name].size).ljust(10)+'| NO DATA!'.ljust(12) +'| '+ str(d[name].size).ljust(10)+'| '+status.ljust(10)+'|'
         else:

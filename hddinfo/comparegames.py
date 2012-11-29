@@ -34,6 +34,7 @@ def delfolder(array):
         mysqlwork.del_folder(club,comp,i)
 
 def formatprint(string, massive=[]):
+    mass_to_mysql=[]
     filename = 'D:\log\Dlog.txt'
     f = open(filename, 'a')
     print string
@@ -47,19 +48,24 @@ def formatprint(string, massive=[]):
             print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])
             f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])+ '\n')
             if checked[1] == 0:
-                mysqlwork.write_folder(i, dict[i], club, comp, 1,0)
+                #mysqlwork.write_folder(i, dict[i], club, comp, 1,0)
+                mass_to_mysql.append((i, dict[i], club, comp, 1,0))
             else:
-                mysqlwork.write_folder(i, dict[i], club, comp, 1,1)
+                #mysqlwork.write_folder(i, dict[i], club, comp, 1,1)
+                mass_to_mysql.append((i, dict[i], club, comp, 1,1))
         if checking == 0 and os.path.exists('D:/Games/' + i):
             print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + 'No data for this folder!'
             f.write('  ' + i.ljust(30) + '\t' + dict[i] + ' MB' + '\n')
-            mysqlwork.write_folder(i, dict[i], club, comp, 0)
+            #mysqlwork.write_folder(i, dict[i], club, comp, 0,1)
+            mass_to_mysql.append((i, dict[i], club, comp, 0,1))
         if os.path.exists('D:/Games/' + i) == False:
             print '  ' + i.ljust(30)+ '\t' + 'No exist!'
             f.write('  ' + i.ljust(30)+ '\t' + 'No exist!'+ '\n')
     print '\n'
     f.write ('\n')
     f.close()
+    if mass_to_mysql <> []:
+        mysqlwork.write_mass(mass_to_mysql)
 
 def check():
     old = time.time()
