@@ -6,6 +6,7 @@ import time
 import mysqlwork
 import socket
 
+mysql_count = 0
 
 def check_size(f_size, accuracy, r_size):
     if abs(int(f_size)-int(r_size)) > int(accuracy):
@@ -25,6 +26,7 @@ def get_size(start_path = '.'):
     return str(total_size/1024/1024)
 
 def delfolder(array):
+    global mysql_count
     for i in array:
         #print('D:/Games/' + i)
         if os.path.isdir('D:/Games/'+ i) == 1:
@@ -32,18 +34,26 @@ def delfolder(array):
         else:
             os.remove("D:/Games/"+ i)
         mysqlwork.del_folder(club,comp,i)
+        mysql_count += 1
 
 def formatprint(string, massive=[]):
+    global mysql_count
     mass_to_mysql=[]
     filename = 'D:\log\Dlog.txt'
     f = open(filename, 'a')
     print string
     f.write(string + '\n')
+    if massive <> []:
+        inbase = mysqlwork.read_folders(club)
+        mysql_count += 1
     for i in massive:
         i=i.lower()
-        checking = mysqlwork.check_inbase(i, club)
+        #checking = mysqlwork.check_inbase(i, club)
+        checking = 0
+        if i in inbase:
+            checking = 1
         if os.path.exists('D:/Games/' + i) and checking:
-            read = mysqlwork.read(i,club)
+            read = inbase[i]
             checked = check_size(read[0],read[1],dict[i])
             print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])
             f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])+ '\n')
@@ -66,14 +76,17 @@ def formatprint(string, massive=[]):
     f.close()
     if mass_to_mysql <> []:
         mysqlwork.write_mass(mass_to_mysql)
+        mysql_count += 1
 
 def check():
+    global mysql_count
     old = time.time()
     compare = []
     nocompare = []
     nohave = []
     i=0
     expected_list=mysqlwork.read_needsfolder(club)
+    mysql_count += 1
     #print expected_list
     realy_list = os.listdir('D:/Games')
     for elem in realy_list:
@@ -88,6 +101,7 @@ def check():
         else:
             nocompare.append(words)
     mysqlwork.drop_comp(club, comp)
+    mysql_count += 1
     for words in expected_list:
         if words not in realy_list != 1:
             nohave.append(words)
@@ -121,6 +135,7 @@ if __name__ == '__main__':
     club = ip.split('.')[2]
     comp = ip.split('.')[3]
     main()
+    print 'Total count of MySQL operation: ', mysql_count
     sys.exit()
 
 

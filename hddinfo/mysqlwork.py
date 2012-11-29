@@ -134,6 +134,22 @@ def check_inbase(folder='hon1', club='10'):
     else:
         return 1
 
+def read_folders(club):
+
+    """
+    return dict of all folders needs for this club
+    """
+    array = {}
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("SELECT folder,size,accuracy FROM hdd_space WHERE comp = '0' AND club = '{0}' ".format(club))
+    d = cur.fetchall()
+    cur.close()
+    conn.close()
+    for i in d:
+            array[i[0]]=[i[1],i[2]]
+    return array
+
 def read_all_comp(club='10'):
     """
     Return array of all comp in database for this club
