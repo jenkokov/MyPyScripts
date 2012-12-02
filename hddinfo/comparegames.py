@@ -9,6 +9,13 @@ import restore_game
 
 mysql_count = 0
 out_of_range=[]
+logfile_name = 'D:\log\Dlog.txt'
+
+def write_log(string):
+    f = open(logfile_name, 'a')
+    print string
+    f.write(string+'\n')
+    f.close()
 
 def check_size(f_size, accuracy, r_size):
     if abs(int(f_size)-int(r_size)) > int(accuracy):
@@ -30,14 +37,13 @@ def get_size(start_path = '.'):
 
 def delfolder(array):
     global mysql_count
-    print 'Start deleting folders...\n\n'
+    write_log('Start deleting folders...\n\n')
     for i in array:
-        #print('D:/Games/' + i)
         if os.path.isdir('D:/Games/'+ i) == 1:
-            shutil.rmtree('D:/Games/'+ i, 1)
+            #shutil.rmtree('D:/Games/'+ i, 1)
             pass
         else:
-            os.remove("D:/Games/"+ i)
+            #os.remove("D:/Games/"+ i)
             pass
         mysqlwork.del_folder(club,comp,i)
         mysql_count += 1
@@ -46,8 +52,7 @@ def formatprint(string, massive=[]):
     global out_of_range
     global mysql_count
     mass_to_mysql=[]
-    filename = 'D:\log\Dlog.txt'
-    f = open(filename, 'a')
+    f = open(logfile_name, 'a')
     print string
     f.write(string + '\n')
     if massive <> []:
@@ -96,12 +101,10 @@ def check():
     i=0
     expected_list=mysqlwork.read_needsfolder(club)
     mysql_count += 1
-    #print expected_list
     realy_list = os.listdir('D:/Games')
     for elem in realy_list:
         realy_list[i]=elem.lower()
         i=i+1
-    #print realy_list
     for words in realy_list:
         print 'Calculate size for ' + 'D:/Games/' + words
         dict[words] = get_size('D:/Games/' + words)
@@ -123,10 +126,19 @@ def check():
         formatprint('Deleted files and folders: ', nocompare)
     formatprint('Time for operation: ' + str(time.time() - old))
     if len(sys.argv) == 2 and sys.argv[1]  == 'restore':
-        delfolder(nocompare)
-        formatprint('Deleted files and folders: ', nocompare)
-        restore_game.add(nohave)
-        restore_game.restore(out_of_range)
+        if len(nocompare) !=0:
+            delfolder(nocompare)
+            formatprint('Deleted files and folders: ', nocompare)
+        else:
+            write_log('No folders needs to delete!')
+        if len(nohave) !=0:
+            restore_game.add(nohave)
+        else:
+            write_log('No folders needs to downloading!')
+        if len(out_of_range) !=0:
+            restore_game.restore(out_of_range)
+        else:
+            write_log('No folders need to restore!')
 
 
 def main():
@@ -152,7 +164,7 @@ if __name__ == '__main__':
     club = ip.split('.')[2]
     comp = ip.split('.')[3]
     main()
-    print 'Total count of MySQL operation: ', mysql_count
+    write_log('Total count of MySQL operation: '+ str(mysql_count))
     sys.exit()
 
 
