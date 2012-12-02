@@ -2,6 +2,8 @@ import sys
 import mysqlwork
 import datetime
 
+mysql_count = 0
+
 class Folder ():
     def __init__(self, size, accuracy, status,InRange):
         self.size = size
@@ -14,18 +16,23 @@ class Folder ():
         return f
 
 def main(club, comp):
+    global mysql_count
     all_comp = mysqlwork.read_all_comp(club)
+    mysql_count += 1
     if int(comp) not in all_comp:
         print 'Comp #{0} or club #{1} not in base!'.format(comp,club)
         return
     array = mysqlwork.read_all_folders(club, comp)
+    mysql_count += 1
     for i in array:
         d[i[0]]=Folder(i[1],i[2],i[3],i[4])
     needs_folder = mysqlwork.read_needsfolder(club)
+    mysql_count += 1
     print '\n+'.ljust(75,'-')+'+\n' +'|'+'Name'.center(25)+'|'+'Size'.center(11)+'|'+'Ideal'.center(11)+'|Difference'.ljust(12)+'|'+'Status'.center(11)+'|'+'\n'+'+'.ljust(74,'-')+'+'
     for name in needs_folder:
         if name not in d:
             ideal_size = mysqlwork.read(name, club)
+            mysql_count += 1
             print '|'+name[:25].ljust(25)+'| no data'.ljust(12)+'| '+str(ideal_size[0]).ljust(10) +'| '+ str(ideal_size[0]).ljust(10)+'| NO EXISTS!|'
     for name in sorted(d):
         status='Need'
@@ -34,15 +41,19 @@ def main(club, comp):
             print '|'+name[:25].ljust(25)+'| '+ str(d[name].size).ljust(10)+'| NO DATA!'.ljust(12) +'| '+ str(d[name].size).ljust(10)+'| '+status.ljust(10)+'|'
         else:
             ideal_size = mysqlwork.read(name, club)
+            mysql_count += 1
             print '|'+name[:25].ljust(25)+'| '+ str(d[name].size).ljust(10)+'| '+ str(ideal_size[0]).ljust(10) +'| '+ str(abs(d[name].size-ideal_size[0])).ljust(10)+'| '+status.ljust(10)+'|'
     print '+'.ljust(74,'-')+ '+\n'
 
 def info_club(club):
+    global mysql_count
     all_comp = mysqlwork.read_all_comp(club)
+    mysql_count += 1
     if len(all_comp)==0:
         print 'Club #{0} not in base!'.format(club)
         return
     needs_folder = mysqlwork.read_needsfolder(club)
+    mysql_count += 1
     f = open ('D:/log/Log_for_Club{0}.txt'.format(club), 'w')
     time = datetime.datetime.now()
     f.write('Time: ' + str(time) + '\n\n')
@@ -52,6 +63,7 @@ def info_club(club):
         out_of_range=[]
         not_exist=[]
         array = mysqlwork.read_all_folders(club, machine)
+        mysql_count += 1
         for i in array:
             d[i[0]]=Folder(i[1],i[2],i[3],i[4])
         for name in d:
@@ -71,8 +83,8 @@ def info_club(club):
                 f.write('\t{1}. {0} not exist!\n'.format(i.upper(), j))
                 j=j+1
             for i in out_of_range:
-                ideal_size = mysqlwork.read(i, club)
-                delta_size = abs(d[i].size-ideal_size[0])
+                ideal_size = needs_folder[i]
+                delta_size = abs(d[i].size-ideal_size)
                 print '\t{1}. {0} not in range for '.format(i.upper(),j).ljust(35,'.')+ ' {0} MB'.format(delta_size)
                 f.write('\t{1}. {0} not in range for '.format(i.upper(),j).ljust(35,'.')+ ' {0} MB\n'.format(delta_size))
                 j=j+1
@@ -84,4 +96,5 @@ if __name__ == '__main__':
         main(sys.argv[1], sys.argv[2])
     if len(sys.argv)==2:
         info_club(sys.argv[1])
+    print mysql_count
     sys.exit()

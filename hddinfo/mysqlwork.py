@@ -37,6 +37,7 @@ while needContinue:
 def read_all_folders(club, comp):
     needContinue = True
     count=0
+    d=[]
     while needContinue:
         try:
             conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
@@ -81,6 +82,7 @@ def read(folder='pointblank', club='10'):
 
     needContinue = True
     count=0
+    f=0
     while needContinue:
         try:
             conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
@@ -169,15 +171,15 @@ def read_all_comp(club='10'):
 def read_needsfolder(club='10'):
 
     """
-    Return array of needs folders for this club
+    Return array of needs folders and his size for this club
     """
-    array=[]
+    array={}
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("SELECT folder FROM hdd_space WHERE club = '{0}' AND comp = 0 ".format(club))
+    cur.execute("SELECT folder,size FROM hdd_space WHERE club = '{0}' AND comp = 0 ".format(club))
     d = cur.fetchall()
     for i in d:
-        array.extend(i)
+        array[i[0]]=i[1]
     cur.close()
     conn.close()
     return array

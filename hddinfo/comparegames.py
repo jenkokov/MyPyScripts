@@ -5,14 +5,17 @@ import shutil
 import time
 import mysqlwork
 import socket
+import restore_game
 
 mysql_count = 0
+out_of_range=[]
 
 def check_size(f_size, accuracy, r_size):
     if abs(int(f_size)-int(r_size)) > int(accuracy):
         return ['Out of range to: ' + str(abs(int(f_size)-int(r_size))-int(accuracy)) + ' MB',0]
     else:
         return ['Normal size!',1]
+
 
 def get_size(start_path = '.'):
     total_size = 0
@@ -27,16 +30,20 @@ def get_size(start_path = '.'):
 
 def delfolder(array):
     global mysql_count
+    print 'Start deleting folders...\n\n'
     for i in array:
         #print('D:/Games/' + i)
         if os.path.isdir('D:/Games/'+ i) == 1:
             shutil.rmtree('D:/Games/'+ i, 1)
+            pass
         else:
             os.remove("D:/Games/"+ i)
+            pass
         mysqlwork.del_folder(club,comp,i)
         mysql_count += 1
 
 def formatprint(string, massive=[]):
+    global out_of_range
     global mysql_count
     mass_to_mysql=[]
     filename = 'D:\log\Dlog.txt'
@@ -55,6 +62,8 @@ def formatprint(string, massive=[]):
         if os.path.exists('D:/Games/' + i) and checking:
             read = inbase[i]
             checked = check_size(read[0],read[1],dict[i])
+            if checked[1] == 0:
+                out_of_range.append(i)
             print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])
             f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])+ '\n')
             if checked[1] == 0:
@@ -113,6 +122,12 @@ def check():
         delfolder(nocompare)
         formatprint('Deleted files and folders: ', nocompare)
     formatprint('Time for operation: ' + str(time.time() - old))
+    if len(sys.argv) == 2 and sys.argv[1]  == 'restore':
+        delfolder(nocompare)
+        formatprint('Deleted files and folders: ', nocompare)
+        restore_game.add(nohave)
+        restore_game.restore(out_of_range)
+
 
 def main():
     if len(sys.argv) > 2:
@@ -127,6 +142,8 @@ def main():
     formatprint ('Check from database!')
     if len(sys.argv) == 2 and sys.argv[1]  == 'del':
         formatprint('!Running with deleting unwanted folders!')
+    if len(sys.argv) == 2 and sys.argv[1]  == 'restore':
+        formatprint('!Running with restoring all data!')
     check()
 
 if __name__ == '__main__':
