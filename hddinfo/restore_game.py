@@ -1,5 +1,11 @@
 __author__ = 'Jenko'
-from comparegames import write_log
+
+logfile_name = 'D:\log\Dlog.txt'
+def write_log(string):
+    f = open(logfile_name, 'a')
+    print string
+    f.write(string+'\n')
+    f.close()
 
 def add(array):
     write_log('\nAdding {0} games...\n'.format(len(array)))

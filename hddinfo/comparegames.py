@@ -40,10 +40,10 @@ def delfolder(array):
     write_log('Start deleting folders...\n\n')
     for i in array:
         if os.path.isdir('D:/Games/'+ i) == 1:
-            #shutil.rmtree('D:/Games/'+ i, 1)
+            shutil.rmtree('D:/Games/'+ i, 1)
             pass
         else:
-            #os.remove("D:/Games/"+ i)
+            os.remove("D:/Games/"+ i)
             pass
         mysqlwork.del_folder(club,comp,i)
         mysql_count += 1

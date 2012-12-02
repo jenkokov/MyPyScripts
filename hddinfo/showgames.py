@@ -62,6 +62,7 @@ def info_club(club):
         d={}
         out_of_range=[]
         not_exist=[]
+        not_need=[]
         array = mysqlwork.read_all_folders(club, machine)
         mysql_count += 1
         for i in array:
@@ -72,22 +73,32 @@ def info_club(club):
         for name in needs_folder:
             if name not in d:
                 not_exist.append(name)
-        if len(out_of_range)!=0 or len(not_exist)!=0:
+        for name in d:
+            if name not in needs_folder:
+                not_need.append(name)
+        if len(out_of_range)!=0 or len(not_exist)!=0 or len (not_need) !=0:
             print '\nErrors on {0} comp:'.format(machine)
             f.write('\nErrors on {0} comp:\n'.format(machine))
             j=1
             out_of_range.sort()
             not_exist.sort()
+            not_need.sort()
             for i in not_exist:
                 print '\t{1}. {0} not exist!'.format(i.upper(), j).ljust(35,'.')+' <NONE>'
                 f.write('\t{1}. {0} not exist!\n'.format(i.upper(), j))
                 j=j+1
-            for i in out_of_range:
-                ideal_size = needs_folder[i]
-                delta_size = abs(d[i].size-ideal_size)
-                print '\t{1}. {0} not in range for '.format(i.upper(),j).ljust(35,'.')+ ' {0} MB'.format(delta_size)
-                f.write('\t{1}. {0} not in range for '.format(i.upper(),j).ljust(35,'.')+ ' {0} MB\n'.format(delta_size))
+            for i in not_need:
+                print '\t{1}. {0} not need!'.format(i.upper(), j).ljust(35,'.')+' '+ str(d[i].size) + ' MB'
+                f.write('\t{1}. {0} not need!'.format(i.upper(), j).ljust(35,'.')+' '+str(d[i].size)+' MB\n')
                 j=j+1
+            for i in out_of_range:
+                if i in needs_folder:
+                    ideal_size = needs_folder[i]
+                    delta_size = abs(d[i].size-ideal_size)
+                    print '\t{1}. {0} not in range for '.format(i.upper(),j).ljust(35,'.')+ ' {0} MB'.format(delta_size)
+                    f.write('\t{1}. {0} not in range for '.format(i.upper(),j).ljust(35,'.')+ ' {0} MB\n'.format(delta_size))
+                    j=j+1
+
     f.close()
 
 if __name__ == '__main__':
@@ -96,5 +107,5 @@ if __name__ == '__main__':
         main(sys.argv[1], sys.argv[2])
     if len(sys.argv)==2:
         info_club(sys.argv[1])
-    print mysql_count
+    print 'Total count of MySQL operation: ', mysql_count
     sys.exit()
