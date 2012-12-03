@@ -5,11 +5,12 @@ import datetime
 mysql_count = 0
 
 class Folder ():
-    def __init__(self, size, accuracy, status,InRange):
+    def __init__(self, size, accuracy, status,InRange,time):
         self.size = size
         self.accuracy = accuracy
         self.status = status
         self.InRange = InRange
+        self.time = time
 
     def __repr__(self):
         f = [self.size, self.accuracy, self.status, self.InRange]
@@ -25,7 +26,7 @@ def main(club, comp):
     array = mysqlwork.read_all_folders(club, comp)
     mysql_count += 1
     for i in array:
-        d[i[0]]=Folder(i[1],i[2],i[3],i[4])
+        d[i[0]]=Folder(i[1],i[2],i[3],i[4],i[5])
     needs_folder = mysqlwork.read_needsfolder(club)
     mysql_count += 1
     print '\n+'.ljust(75,'-')+'+\n' +'|'+'Name'.center(25)+'|'+'Size'.center(11)+'|'+'Ideal'.center(11)+'|Difference'.ljust(12)+'|'+'Status'.center(11)+'|'+'\n'+'+'.ljust(74,'-')+'+'
@@ -66,7 +67,7 @@ def info_club(club):
         array = mysqlwork.read_all_folders(club, machine)
         mysql_count += 1
         for i in array:
-            d[i[0]]=Folder(i[1],i[2],i[3],i[4])
+            d[i[0]]=Folder(i[1],i[2],i[3],i[4],i[5])
         for name in d:
             if d[name].InRange == 0:
                 out_of_range.append(name)
@@ -77,8 +78,12 @@ def info_club(club):
             if name not in needs_folder:
                 not_need.append(name)
         if len(out_of_range)!=0 or len(not_exist)!=0 or len (not_need) !=0:
-            print '\nErrors on {0} comp:'.format(machine)
-            f.write('\nErrors on {0} comp:\n'.format(machine))
+            try:
+                date = d[out_of_range[0]].time
+            except:
+                date = d[not_exist[0]].time
+            print '\nErrors on {0} comp (last scan at {1}):'.format(machine,date)
+            f.write('\nErrors on {0} comp (last scat at {1}):\n'.format(machine,date))
             j=1
             out_of_range.sort()
             not_exist.sort()

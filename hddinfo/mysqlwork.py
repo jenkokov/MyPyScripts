@@ -7,6 +7,15 @@ user='hdd_datauser'
 passwd='oknej1984'
 db='hdd_data'
 
+def get_ideals():
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("SELECT club, folder, size FROM hdd_space WHERE comp = 0")
+    d = cur.fetchall()
+    cur.close()
+    conn.close()
+    return d
+
 def get_datetime(val='datetime'):
     t = time.localtime()
     if val == 'datetime':
@@ -42,7 +51,7 @@ def read_all_folders(club, comp):
         try:
             conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
             cur = conn.cursor()
-            cur.execute("SELECT folder, size, accuracy, status, InRange FROM hdd_space WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
+            cur.execute("SELECT folder, size, accuracy, status, InRange,time FROM hdd_space WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
             d = cur.fetchall()
             cur.close()
             conn.close()

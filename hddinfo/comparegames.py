@@ -39,14 +39,15 @@ def delfolder(array):
     global mysql_count
     write_log('Start deleting folders...\n\n')
     for i in array:
-        if os.path.isdir('D:/Games/'+ i) == 1:
-            shutil.rmtree('D:/Games/'+ i, 1)
-            pass
-        else:
-            os.remove("D:/Games/"+ i)
-            pass
-        mysqlwork.del_folder(club,comp,i)
-        mysql_count += 1
+        try:
+            if os.path.isdir('D:/Games/'+ i) == 1:
+                shutil.rmtree('D:/Games/'+ i, 1)
+            else:
+                os.remove("D:/Games/"+ i)
+            mysqlwork.del_folder(club,comp,i)
+            mysql_count += 1
+        except:
+            write_log('Error on deleting {0}!'.format(i))
 
 def formatprint(string, massive=[]):
     global out_of_range
