@@ -76,7 +76,7 @@ def read_all_folders(club, comp):
 def update_size(club,folder,size):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("UPDATE hdd_space SET Size={2} WHERE club={0} and comp=0 and folder='{1}' and sync_status = '0'".format(club, folder, size))
+    cur.execute("UPDATE hdd_space SET Size={2}, sync_status = '0' WHERE club={0} and comp=0 and folder='{1}'".format(club, folder, size))
     cur.close()
     conn.close()
 
