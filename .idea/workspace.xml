@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyPyScripts.iml" afterPath="$PROJECT_DIR$/.idea/MyPyScripts.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hddinfo/steam.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gamerestore/files_check.py" afterPath="$PROJECT_DIR$/gamerestore/files_check.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/d_clear.py" afterPath="$PROJECT_DIR$/hddinfo/d_clear.py" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +29,27 @@
       <file leaf-file-name="showgames.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="31" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+            <state line="35" column="28" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="files_check.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="steam.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hddinfo/steam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="5" selection-start="1885" selection-end="1885" vertical-scroll-proportion="1.6022364">
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="files_check.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gamerestore/files_check.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="27" selection-start="488" selection-end="488" vertical-scroll-proportion="0.5702875">
+            <state line="5" column="11" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -52,8 +60,10 @@
       <file leaf-file-name="d_clear.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="8" column="28" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +100,7 @@
       <file leaf-file-name="comparegames.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+            <state line="35" column="36" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AVP/mysqlavp.py" />
         <option value="$PROJECT_DIR$/hardinfo/mysqlhard.py" />
         <option value="$PROJECT_DIR$/TEST/show_comp.py" />
         <option value="$PROJECT_DIR$/TEST/GUI.py" />
@@ -146,6 +155,7 @@
         <option value="$PROJECT_DIR$/hddinfo/test.py" />
         <option value="$PROJECT_DIR$/gamerestore/files_check.py" />
         <option value="$PROJECT_DIR$/hddinfo/d_clear.py" />
+        <option value="$PROJECT_DIR$/hddinfo/steam.py" />
       </list>
     </option>
   </component>
@@ -275,6 +285,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="gameinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="TEST" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -312,7 +336,7 @@
       <recent name="C:\Python27\Example\MyPyScripts\AVP" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.d_clear">
+  <component name="RunManager" selected="Python.steam">
     <configuration default="false" name="create_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,24 +349,6 @@
       <module name="MyPyScripts" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/create_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="MULTIPROCESS" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ideals" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hddinfo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="MyPyScripts" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/ideals.py" />
       <option name="PARAMETERS" value="" />
       <option name="MULTIPROCESS" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -399,6 +405,24 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/d_clear.py" />
       <option name="PARAMETERS" value="1" />
       <option name="MULTIPROCESS" value="true" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="steam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hddinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="MyPyScripts" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/steam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="MULTIPROCESS" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -479,18 +503,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.showgames" />
       <item index="1" class="java.lang.String" itemvalue="Python.create_file" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ideals" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.files_check" />
-      <item index="5" class="java.lang.String" itemvalue="Python.d_clear" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.files_check" />
+      <item index="4" class="java.lang.String" itemvalue="Python.d_clear" />
+      <item index="5" class="java.lang.String" itemvalue="Python.steam" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.d_clear" />
-        <item index="1" class="java.lang.String" itemvalue="Python.files_check" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.create_file" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ideals" />
+        <item index="0" class="java.lang.String" itemvalue="Python.steam" />
+        <item index="1" class="java.lang.String" itemvalue="Python.d_clear" />
+        <item index="2" class="java.lang.String" itemvalue="Python.files_check" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.create_file" />
       </list>
     </recent_temporary>
   </component>
@@ -608,7 +632,11 @@
       <created>1354542217067</created>
       <updated>1354542217067</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Revision#35">
+      <created>1355763380229</created>
+      <updated>1355763380229</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -647,6 +675,7 @@
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25684932" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -662,7 +691,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -703,7 +731,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revision#34" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revision#35" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -738,6 +766,7 @@
     <MESSAGE value="Revision#32" />
     <MESSAGE value="Revision#33" />
     <MESSAGE value="Revision#34" />
+    <MESSAGE value="Revision#35" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,11 +790,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TEST/GUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="13" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.31369662" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TEST/show_comp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="26" selection-start="405" selection-end="405" vertical-scroll-proportion="0.02503682" />
@@ -798,30 +822,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/ideals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="24" selection-start="251" selection-end="251" vertical-scroll-proportion="0.3357271" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/create_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="48" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TEST/wake_comp.py">
@@ -833,20 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="31" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/restore_game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="20" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
@@ -854,9 +843,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/ideals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="10" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="28" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gamerestore/files_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="488" selection-end="488" vertical-scroll-proportion="0.5702875">
+        <state line="5" column="11" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="36" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/create_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="48" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/steam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="5" selection-start="1885" selection-end="1885" vertical-scroll-proportion="1.6022364">
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
