@@ -18,9 +18,22 @@ def main():
                     os.remove(work_folder+ name)
                 except:
                     print 'Error deleting {0}'.format(work_folder+name)
+
+def steam_clear():
+    need_folders = ['sourcemods','common','temp']
+    work_folder = u'D:\\Games\\Steam\\steamapps\\'
+    all_folders = os.listdir(work_folder)
+    for name in all_folders:
+        if name not in need_folders and os.path.isdir(work_folder+ name) == 1:
+            try:
+                shutil.rmtree(work_folder+ name, 1)
+            except:
+                print 'Error deleting {0}'.format(work_folder+name)
+
 if __name__ == '__main__':
     if len(sys.argv)<2:
         print 'Need are some one any parameter for cleaning!'
         sys.exit()
     main()
+    steam_clear()
     sys.exit()

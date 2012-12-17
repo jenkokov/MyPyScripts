@@ -30,10 +30,10 @@ def main(path):
             print etree.tostring(root,pretty_print=True)
             print time.time()-old
             #print fp,md5_hash
-    print d
+    #print d
 
 
 if __name__=='__main__':
-    path = 'D:\\Games\\wot'
+    path = 'D:\\Games\\Steam\\steamapps\\common\\dota 2 beta'
     d={}
     main(path)
