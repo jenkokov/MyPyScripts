@@ -52,7 +52,7 @@ def scan_games(size, folders, files, accuracy=100):
         print 'Files check FAILED! {0} file(s) not exist'.format(len(miss_files))
 
     if folders_check == True:
-        print 'Folders check COMPLETE without errors! {0} file(s) exists.'.format(len(folders))
+        print 'Folders check COMPLETE without errors! {0} folder(s) exists.'.format(len(folders))
     else:
         print 'Folders check FAILED! {0} folder(s) not exist'.format(len(miss_folders))
     #o = win32ui.CreateFileDialog( 1, None, None,(win32con.OFN_FILEMUSTEXIST|win32con.OFN_EXPLORER|win32con.OFN_ALLOWMULTISELECT), "Text Files (*.txt)|*.txt|All Files (*.*)|*.*|")
