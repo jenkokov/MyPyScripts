@@ -20,7 +20,7 @@ class Folder ():
         return str(f)
 
 def main():
-    f = open('D:\\log\\ideal.log','w')
+    f = open('D:\\log\\ideals.log','w')
     f.close()
     all_folders = []
     d = {}
