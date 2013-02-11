@@ -20,6 +20,7 @@ Download all folders in "array"
 def restore(array):
     """
 Delete and download all folders in "array"
+    :param array:
     """
     write_log('\nRestoring {0} games...\n'.format(len(array)))
     for i in array:

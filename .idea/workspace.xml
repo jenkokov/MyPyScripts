@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Python27\example\MyPyScripts\.idea\inspectionProfiles\profiles_settings.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyPyScripts.iml" afterPath="$PROJECT_DIR$/.idea/MyPyScripts.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/comparegames.py" afterPath="$PROJECT_DIR$/hddinfo/comparegames.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hardinfo/mysqlhard.py" afterPath="$PROJECT_DIR$/hardinfo/mysqlhard.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hardinfo/parse_report.py" afterPath="$PROJECT_DIR$/hardinfo/parse_report.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/pyt_svc.py" afterPath="$PROJECT_DIR$/service/pyt_svc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/d_clear.py" afterPath="$PROJECT_DIR$/hddinfo/d_clear.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/restore_game.py" afterPath="$PROJECT_DIR$/hddinfo/restore_game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hardinfo/test.py" afterPath="$PROJECT_DIR$/hardinfo/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/test.py" afterPath="$PROJECT_DIR$/hddinfo/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588269975" ignored="false" />
+    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360602992074" ignored="false" />
     <file path="/pyt_svc.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588573795" ignored="false" />
     <file path="/a.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587961300" ignored="false" />
     <file path="/a.coffee" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587963343" ignored="false" />
@@ -34,7 +34,6 @@
     <file path="$PROJECT_DIR$/AVP/utorrent.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/gameinfo/add_game.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/gameinfo/check_version.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/misc.xml" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/gameinfo/mysqlgame.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/modules.xml" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/other.xml" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
@@ -55,8 +54,9 @@
     <file path="$PROJECT_DIR$/TEST/vk.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/TEST/vk_auth.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/TEST/wake_comp.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
-    <file path="/comparegames.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360590105212" ignored="false" />
+    <file path="/comparegames.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360616267362" ignored="false" />
     <file path="/restore_game.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360599751409" ignored="false" />
+    <file path="/d_clear.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360615703617" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,21 +76,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pyt_svc.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/pyt_svc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comparegames.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="comparegames.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="29" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.0">
+            <state line="55" column="28" selection-start="1374" selection-end="1374" vertical-scroll-proportion="-1.3645225">
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -98,10 +87,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restore_game.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="d_clear.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="51" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restore_game.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hddinfo/restore_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="19" selection-start="507" selection-end="507" vertical-scroll-proportion="0.6486486">
+            <state line="14" column="33" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hddinfo/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="10" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,9 +137,7 @@
       <list>
         <option value="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
         <option value="$PROJECT_DIR$/hddinfo/ideals.py" />
-        <option value="$PROJECT_DIR$/hddinfo/test.py" />
         <option value="$PROJECT_DIR$/gamerestore/files_check.py" />
-        <option value="$PROJECT_DIR$/hddinfo/d_clear.py" />
         <option value="$PROJECT_DIR$/hddinfo/steam.py" />
         <option value="$PROJECT_DIR$/TEST/fetch_photos.py" />
         <option value="$PROJECT_DIR$/TEST/vk_auth.py" />
@@ -140,16 +147,18 @@
         <option value="$PROJECT_DIR$/hardinfo/mysqlhard.py" />
         <option value="$PROJECT_DIR$/hardinfo/parse_report.py" />
         <option value="$PROJECT_DIR$/hardinfo/test.py" />
-        <option value="$PROJECT_DIR$/hddinfo/comparegames.py" />
         <option value="$PROJECT_DIR$/hddinfo/restore_game.py" />
+        <option value="$PROJECT_DIR$/hddinfo/d_clear.py" />
+        <option value="$PROJECT_DIR$/hddinfo/test.py" />
+        <option value="$PROJECT_DIR$/hddinfo/comparegames.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1036" />
+    <option name="width" value="1456" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -158,10 +167,28 @@
           <State>
             <id />
           </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Buildout</id>
+            <id>PyPep8Inspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -193,16 +220,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,6 +254,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +275,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="233" />
-    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -285,40 +312,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.pyt_svc">
-    <configuration default="false" name="vk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TEST" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="MyPyScripts" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TEST/vk.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="vk_auth" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TEST" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="MyPyScripts" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TEST/vk_auth.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="Doctests in C:\Python27\example\MyPyScripts\TEST" type="tests" factoryName="Doctests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,6 +348,57 @@
       <option name="TEST_TYPE" value="TEST_FOLDER" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hddinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="MyPyScripts" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/test.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="comparegames" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hddinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="MyPyScripts" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/comparegames.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="restore_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hddinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="MyPyScripts" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/restore_game.py" />
+      <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -449,20 +493,22 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.showgames" />
       <item index="1" class="java.lang.String" itemvalue="Python.pyt_svc" />
-      <item index="2" class="java.lang.String" itemvalue="Python.vk" />
-      <item index="3" class="java.lang.String" itemvalue="Python.vk_auth" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts\TEST" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts\TEST" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="5" class="java.lang.String" itemvalue="Python.comparegames" />
+      <item index="6" class="java.lang.String" itemvalue="Python.restore_game" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts\TEST" />
-        <item index="2" class="java.lang.String" itemvalue="Python.vk" />
-        <item index="3" class="java.lang.String" itemvalue="Python.vk_auth" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.restore_game" />
+        <item index="2" class="java.lang.String" itemvalue="Python.comparegames" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in C:\Python27\example\MyPyScripts\TEST" />
       </list>
     </recent_temporary>
   </component>
@@ -633,24 +679,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25483504" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2626539" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.74516493" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13342898" sideWeight="0.7373461" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39611873" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29654405" sideWeight="0.50053364" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4493743" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27633378" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423207" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -752,10 +798,26 @@
           <option name="timeStamp" value="5" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="940" />
+      <option name="time" value="941" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="29" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/restore_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/steam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="35" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.0" />
@@ -776,26 +838,6 @@
         <state line="54" column="0" selection-start="1649" selection-end="1716" vertical-scroll-proportion="0.55798686" />
       </provider>
     </entry>
-    <entry file="file://D:/Scripts/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="270" selection-end="270" vertical-scroll-proportion="0.55798686" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Scripts/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="0.63238513" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Scripts/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="-2.7899344" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/win32/lib/win32serviceutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="726" column="4" selection-start="29679" selection-end="29679" vertical-scroll-proportion="0.020238096" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TEST/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -803,36 +845,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.11957796">
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="6" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.11957796" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="63" selection-start="128" selection-end="128" vertical-scroll-proportion="0.11957796">
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="6" column="63" selection-start="128" selection-end="128" vertical-scroll-proportion="0.11957796" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/mysqlhard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="736" selection-end="736" vertical-scroll-proportion="0.47831184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/pyt_svc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="24" column="7" selection-start="736" selection-end="736" vertical-scroll-proportion="0.47831184" />
       </provider>
     </entry>
     <entry file="uml://Python/#C:/Python27/example/MyPyScripts/hddinfo/comparegames.py">
@@ -843,25 +866,49 @@
           <nodes />
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="663.5" y="413.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="664.0" y="413.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+    <entry file="file://$PROJECT_DIR$/service/pyt_svc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="29" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="0.4055666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="51" selection-start="711" selection-end="711" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/restore_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="507" selection-end="507" vertical-scroll-proportion="0.6486486">
+        <state line="14" column="33" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="28" selection-start="1374" selection-end="1374" vertical-scroll-proportion="-1.3645225">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

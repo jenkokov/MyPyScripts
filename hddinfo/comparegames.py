@@ -33,7 +33,7 @@ def get_size(start_path='.'):
             fp = os.path.join(dirpath, f)
             try:
                 total_size += os.path.getsize(fp)
-            except:
+            except ValueError:
                 continue
     return str(total_size / 1024 / 1024)
 
@@ -49,7 +49,7 @@ def delfolder(array):
                 os.remove("D:/Games/" + i)
             mysqlwork.del_folder(club, comp, i)
             mysql_count += 1
-        except:
+        except ValueError:
             write_log('Error on deleting {0}!'.format(i))
 
 
@@ -60,7 +60,7 @@ def formatprint(string, massive=[]):
     f = open(logfile_name, 'a')
     print string
     f.write(string + '\n')
-    if massive != []:
+    if len(massive) > 0:
         inbase = mysqlwork.read_folders(club)
         mysql_count += 1
     for i in massive:
@@ -74,8 +74,10 @@ def formatprint(string, massive=[]):
             checked = check_size(read[0], read[1], dict[i])
             if checked[1] == 0:
                 out_of_range.append(i)
-            print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0])
-            f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + 'MB'.ljust(5) + str(checked[0]) + '\n')
+            print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) +\
+                  'MB'.ljust(5) + str(checked[0])
+            f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) +\
+                    'MB'.ljust(5) + str(checked[0]) + '\n')
             if checked[1] == 0:
                 #mysqlwork.write_folder(i, dict[i], club, comp, 1,0)
                 mass_to_mysql.append((i, dict[i], club, comp, 1, 0))
@@ -93,7 +95,7 @@ def formatprint(string, massive=[]):
     print '\n'
     f.write('\n')
     f.close()
-    if mass_to_mysql != []:
+    if len(mass_to_mysql) > 0:
         mysqlwork.write_mass(mass_to_mysql)
         mysql_count += 1
 
