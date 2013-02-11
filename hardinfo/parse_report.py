@@ -19,14 +19,12 @@ def main():
                  'Summary,DMI|DMI BIOS Version,BIOS_Ver',
                  'DMI,Motherboard|Motherboard Properties|Product,Motherboard',
                  'DMI,Processors1|Processor Properties|Version,Processor',
-                 'Windows Video,Windows Video1|Video Adapter Properties|Driver Version,VideoDriver'
-                ]
+                 'Windows Video,Windows Video1|Video Adapter Properties|Driver Version,VideoDriver']
     config.read('C:/report.ini')
-    section_list = ConfigParser.RawConfigParser.sections(config)
     for name in needs_param:
-        i=name.split(',')
-        print i[2]+': '+config.get(i[0],i[1])
-        mysqlhard.insert_data(club,comp,i[2],config.get(i[0],i[1]))
+        i = name.split(',')
+        print i[2] + ': ' + config.get(i[0], i[1])
+        mysqlhard.insert_data(club, comp, i[2], config.get(i[0], i[1]))
 if __name__ == '__main__':
     dict = {}
     ip = socket.gethostbyname(socket.gethostname())
