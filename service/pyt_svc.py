@@ -9,7 +9,7 @@ global _need_stop_
 _need_stop_ = False
 
 
-class AppServerSvc (win32serviceutil.ServiceFramework):
+class AppServerSvc(win32serviceutil.ServiceFramework):
     _svc_name_ = "tor_check"
     _svc_display_name_ = "Torrent Check"
     _svc_description_ = "Service for check torrent tasks"
@@ -27,7 +27,7 @@ class AppServerSvc (win32serviceutil.ServiceFramework):
 
     def SvcDoRun(self):
         servicemanager.LogMsg(servicemanager.EVENTLOG_INFORMATION_TYPE, servicemanager.PYS_SERVICE_STARTED,
-        (self._svc_name_, ''))
+                              (self._svc_name_, ''))
         self.main()
 
     def main(self):
@@ -40,6 +40,6 @@ class AppServerSvc (win32serviceutil.ServiceFramework):
             f.close()
         pass
 
+
 if __name__ == '__main__':
     win32serviceutil.HandleCommandLine(AppServerSvc)
-

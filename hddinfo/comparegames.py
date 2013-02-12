@@ -1,3 +1,5 @@
+# coding= windows-1251
+
 import sys
 import os
 import datetime
@@ -6,6 +8,7 @@ import time
 import mysqlwork
 import socket
 import restore_game
+import stat
 
 mysql_count = 0
 out_of_range = []
@@ -38,13 +41,21 @@ def get_size(start_path='.'):
     return str(total_size / 1024 / 1024)
 
 
+def on_rm_error(func, path, exc_info):
+    try:
+        os.chmod(path, stat.S_IWRITE)
+        os.unlink(path)
+    except:
+        return
+
+
 def delfolder(array):
     global mysql_count
     write_log('Start deleting folders...\n\n')
     for i in array:
         try:
             if os.path.isdir('D:/Games/' + i) == 1:
-                shutil.rmtree('D:/Games/' + i, True)
+                shutil.rmtree('D:/Games/' + i, False, onerror=on_rm_error)
             else:
                 os.remove("D:/Games/" + i)
             mysqlwork.del_folder(club, comp, i)
@@ -74,10 +85,10 @@ def formatprint(string, massive=[]):
             checked = check_size(read[0], read[1], dict[i])
             if checked[1] == 0:
                 out_of_range.append(i)
-            print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) +\
+            print '  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) + \
                   'MB'.ljust(5) + str(checked[0])
-            f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6) +\
-                    'MB'.ljust(5) + str(checked[0]) + '\n')
+            f.write('  ' + i.ljust(30) + '\t' + dict[i].ljust(6) + 'MB'.ljust(10) + str(read[0]).ljust(6)
+                    + 'MB'.ljust(5) + str(checked[0]) + '\n')
             if checked[1] == 0:
                 #mysqlwork.write_folder(i, dict[i], club, comp, 1,0)
                 mass_to_mysql.append((i, dict[i], club, comp, 1, 0))
@@ -165,6 +176,7 @@ def main():
     if len(sys.argv) == 2 and sys.argv[1] == 'restore':
         formatprint('!Running with restoring all data!')
     check()
+
 
 if __name__ == '__main__':
     dict = {}
