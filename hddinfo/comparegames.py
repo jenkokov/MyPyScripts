@@ -1,4 +1,4 @@
-# coding= windows-1251
+#coding= windows-1251
 
 import sys
 import os
