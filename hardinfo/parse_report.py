@@ -23,21 +23,28 @@ def main():
                  'Windows Video,Windows Video1|Video Adapter Properties|Driver Version,VideoDriver',
                  'Sensor,Temperatures|CPU,temp_proc',
                  'Sensor,Temperatures|GPU Diode (DispIO),temp_video',
+                 'Sensor,Temperatures|GPU Diode,temp_video',
                  'DMI,Memory Controller|Memory Controller Properties|Memory Slots,spd_count']
     config.read('C:/report.ini')
     for name in needs_param:
         i = name.split(',')
-        print i[2] + ': ' + config.get(i[0], i[1])
-        mysqlhard.insert_data(club, comp, i[2], config.get(i[0], i[1]))
+        try:
+            print i[2] + ': ' + config.get(i[0], i[1])
+            mysqlhard.insert_data(club, comp, i[2], config.get(i[0], i[1]))
+        except:
+            continue
 
     spd_count = int(config.get('DMI', 'Memory Controller|Memory Controller Properties|Memory Slots'))
 
     for i in range(1, spd_count + 1):
         name = 'SPD' + str(i)
         option = name + '|Memory Module Properties|Module Name'
-        value = config.get('SPD', option)
-        mysqlhard.insert_data(club, comp, name, value)
-        print name + ': ' + value
+        try:
+            value = config.get('SPD', option)
+            mysqlhard.insert_data(club, comp, name, value)
+            print name + ': ' + value
+        except:
+            break
 
     if os.path.exists('C:/version.txt'):
         file = open('C:/version.txt', 'r')

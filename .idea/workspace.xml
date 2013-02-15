@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/comparegames.py" afterPath="$PROJECT_DIR$/hddinfo/comparegames.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyPyScripts.iml" afterPath="$PROJECT_DIR$/.idea/MyPyScripts.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hardinfo/parse_report.py" afterPath="$PROJECT_DIR$/hardinfo/parse_report.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360954419901" ignored="false" />
+    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360957373507" ignored="false" />
     <file path="/pyt_svc.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588573795" ignored="false" />
     <file path="/a.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587961300" ignored="false" />
     <file path="/a.coffee" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587963343" ignored="false" />
@@ -46,7 +47,7 @@
     <file path="$PROJECT_DIR$/TEST/wake_comp.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="/comparegames.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360670932800" ignored="false" />
     <file path="/restore_game.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360599751409" ignored="false" />
-    <file path="/parse_report.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360950666298" ignored="false" />
+    <file path="/parse_report.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360957883305" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
       <file leaf-file-name="parse_report.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="93" selection-end="93" vertical-scroll-proportion="0.18888889">
+            <state line="49" column="42" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.81962866">
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -137,8 +138,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1036" />
+    <option name="width" value="1456" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -185,6 +186,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,30 +230,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="232" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="232" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="233" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="233" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="233" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="907" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="907" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="907" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="233" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="231" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
@@ -255,8 +256,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -659,25 +660,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2536974" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25307798" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.7463026" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18604651" sideWeight="0.7463026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1886657" sideWeight="0.5512996" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39611873" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2536974" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4493743" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4487004" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423207" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -782,6 +783,22 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardinfo/mysqlhard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="15" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/steam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="35" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.0" />
@@ -800,26 +817,6 @@
     <entry file="file://$PROJECT_DIR$/TEST/fetch_photos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="0" selection-start="1649" selection-end="1716" vertical-scroll-proportion="0.55798686" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Scripts/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="270" selection-end="270" vertical-scroll-proportion="0.55798686" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Scripts/http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="558" selection-end="558" vertical-scroll-proportion="0.63238513" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Scripts/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="-2.7899344" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/win32/lib/win32serviceutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="726" column="4" selection-start="29679" selection-end="29679" vertical-scroll-proportion="0.020238096" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TEST/test.py">
@@ -844,9 +841,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/pyt_svc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="13" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="38" column="13" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
@@ -867,9 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0996483">
-          <folding />
-        </state>
+        <state line="6" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0996483" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/mysqlhard.py">
@@ -881,7 +874,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="93" selection-end="93" vertical-scroll-proportion="0.18888889">
+        <state line="49" column="42" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.81962866">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
