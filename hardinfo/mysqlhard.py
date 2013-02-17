@@ -10,7 +10,9 @@ db = 'hdd_data'
 def insert_data(club, comp, param, value):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    if check_in_base(club, comp) == 0:
+    cur.execute("SELECT os FROM hard_space WHERE club={0} and comp = {1}".format(club, comp))
+    d = cur.fetchall()
+    if d == ():
         cur.execute("INSERT INTO hard_space(club,comp,{0},sync_status) VALUES ('{1}','{2}','{3}','0') ".format(param, club, comp, value))
     else:
         cur.execute("UPDATE hard_space SET {2}='{3}', sync_status = '0' WHERE club={0} and comp = {1}".format(club, comp, param, value))

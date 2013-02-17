@@ -4,8 +4,6 @@ import shutil
 import win32ui
 import win32con
 
-
-
 def get_size(start_path = '.'):
     total_size = 0
     for dirpath, dirnames, filenames in os.walk(start_path):

@@ -9,6 +9,15 @@ import mysqlwork
 import socket
 import restore_game
 import stat
+import logging
+
+general_log = 'C:\\dslogon\\general.log'
+if not os.path.exists(general_log):
+    f = open(general_log, 'a')
+    f.close()
+logging.basicConfig(filename=general_log, level=logging.INFO,
+                    format='%(asctime)s: [comparegames.py] [%(levelname)s] %(message)s')
+
 
 mysql_count = 0
 out_of_range = []
@@ -36,7 +45,7 @@ def get_size(start_path='.'):
             fp = os.path.join(dirpath, f)
             try:
                 total_size += os.path.getsize(fp)
-            except ValueError:
+            except:
                 continue
     return str(total_size / 1024 / 1024)
 
@@ -60,7 +69,7 @@ def delfolder(array):
                 os.remove("D:/Games/" + i)
             mysqlwork.del_folder(club, comp, i)
             mysql_count += 1
-        except ValueError:
+        except:
             write_log('Error on deleting {0}!'.format(i))
 
 
@@ -175,7 +184,9 @@ def main():
         formatprint('!Running with deleting unwanted folders!')
     if len(sys.argv) == 2 and sys.argv[1] == 'restore':
         formatprint('!Running with restoring all data!')
+    logging.info('Starting checking files')
     check()
+    logging.info('Finished checking files')
 
 
 if __name__ == '__main__':

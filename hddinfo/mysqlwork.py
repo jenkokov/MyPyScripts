@@ -1,11 +1,12 @@
 import pymysql
 import time
 
-host='172.16.10.189'
-port=3306
-user='hdd_datauser'
-passwd='oknej1984'
-db='hdd_data'
+host = '172.16.10.189'
+port = 3306
+user = 'hdd_datauser'
+passwd = 'oknej1984'
+db = 'hdd_data'
+
 
 def get_ideals():
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
@@ -16,64 +17,67 @@ def get_ideals():
     conn.close()
     return d
 
+
 def get_datetime(val='datetime'):
     t = time.localtime()
     if val == 'datetime':
-        return '{0}-{1}-{2} {3}:{4}:{5}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2),str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
+        return '{0}-{1}-{2} {3}:{4}:{5}'.format(t[0], str(t[1]).zfill(2), str(t[2]).zfill(2), str(t[3]).zfill(2),
+                                                str(t[4]).zfill(2), str(t[5]).zfill(2))
     if val == 'date':
-        return '{0}-{1}-{2}'.format(t[0],str(t[1]).zfill(2),str(t[2]).zfill(2))
+        return '{0}-{1}-{2}'.format(t[0], str(t[1]).zfill(2), str(t[2]).zfill(2))
     if val == 'time':
-        return '{0}:{1}:{2}'.format(str(t[3]).zfill(2),str(t[4]).zfill(2),str(t[5]).zfill(2))
+        return '{0}:{1}:{2}'.format(str(t[3]).zfill(2), str(t[4]).zfill(2), str(t[5]).zfill(2))
 
 needContinue = True
-count=0
+count = 0
 while needContinue:
     try:
 
         needContinue = False
     except:
-        count=count+1
-        if count <6:
+        count += 1
+        if count < 6:
             print 'Error to connect to DB! Try {0} of 5. Retry after 20 second... '.format(count)
             time.sleep(15)
             needContinue = True
         else:
             needContinue = False
-            f=open('C:\\dslogon\\errors.log','a')
+            f = open('C:\\dslogon\\errors.log', 'a')
             f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
             f.close()
 
+
 def read_all_folders(club, comp):
     needContinue = True
-    count=0
-    d=[]
+    count = 0
+    d = []
     while needContinue:
         try:
             conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
             cur = conn.cursor()
-            cur.execute("SELECT folder, size, accuracy, status, InRange,time FROM hdd_space WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
+            cur.execute("SELECT folder, size, accuracy, status, InRange,time FROM hdd_space "
+                        "WHERE comp = '{0}'AND club = '{1}' ".format(comp, club))
             d = cur.fetchall()
             cur.close()
             conn.close()
             needContinue = False
 
         except:
-            count=count+1
-            if count <6:
+            count += 1
+            if count < 6:
                 print 'Error to connect to DB! Try {0} of 5. Retry after 20 second... '.format(count)
                 time.sleep(15)
                 needContinue = True
             else:
                 needContinue = False
-                f=open('C:\\dslogon\\errors.log','a')
+                f = open('C:\\dslogon\\errors.log', 'a')
                 f.write('{0} [COMPAREGAMES] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
                 f.close()
                 d = ()
     return d
 
 
-
-def update_size(club,folder,size):
+def update_size(club, folder, size):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
     cur.execute("UPDATE hdd_space SET Size={2}, sync_status = '0' WHERE club={0} and comp=0 and folder='{1}'".format(club, folder, size))
@@ -90,8 +94,8 @@ def read(folder='pointblank', club='10'):
     """
 
     needContinue = True
-    count=0
-    f=0
+    count = 0
+    f = 0
     while needContinue:
         try:
             conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
@@ -103,19 +107,20 @@ def read(folder='pointblank', club='10'):
             conn.close()
             needContinue = False
         except:
-            count=count+1
-            if count <6:
+            count += 1
+            if count < 6:
                 print 'Error to connect to DB! Try {0} of 5. Retry after 20 second... '.format(count)
                 time.sleep(15)
                 needContinue = True
             else:
                 needContinue = False
-                f=open('C:\\dslogon\\errors.log','a')
+                f = open('C:\\dslogon\\errors.log', 'a')
                 f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
                 f.close()
                 f = ()
 
     return f
+
 
 def drop_comp(club='10', comp='108'):
 
@@ -128,6 +133,7 @@ def drop_comp(club='10', comp='108'):
     cur.close()
     conn.close()
 
+
 def check_inbase(folder='hon1', club='10'):
 
     """
@@ -135,7 +141,7 @@ def check_inbase(folder='hon1', club='10'):
     """
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    folder=folder.replace('\'','\\\'')
+    folder = folder.replace('\'', '\\\'')
     cur.execute("SELECT size FROM hdd_space WHERE Folder = '{0}' AND comp = '0' AND club = '{1}' ".format(folder, club))
     d = cur.fetchall()
     cur.close()
@@ -144,6 +150,7 @@ def check_inbase(folder='hon1', club='10'):
         return 0
     else:
         return 1
+
 
 def read_folders(club):
 
@@ -158,14 +165,15 @@ def read_folders(club):
     cur.close()
     conn.close()
     for i in d:
-            array[i[0]]=[i[1],i[2]]
+            array[i[0]] = [i[1], i[2]]
     return array
+
 
 def read_all_comp(club='10'):
     """
     Return array of all comp in database for this club
     """
-    array=[]
+    array = []
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
     cur.execute("SELECT comp FROM hdd_space WHERE club = '{0}'".format(club))
@@ -177,37 +185,41 @@ def read_all_comp(club='10'):
     conn.close()
     return array
 
+
 def read_needsfolder(club='10'):
 
     """
     Return array of needs folders and his size for this club
     """
-    array={}
+    array = {}
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
     cur.execute("SELECT folder,size FROM hdd_space WHERE club = '{0}' AND comp = 0 ".format(club))
     d = cur.fetchall()
     for i in d:
-        array[i[0]]=i[1]
+        array[i[0]] = i[1]
     cur.close()
     conn.close()
     return array
 
+
 def write_folder(folder, size, club, comp, status='0', InRange='1'):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    folder=folder.replace('\'','\\\'')
-    cur.execute("INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, status, InRange, sync_status) VALUES ('{0}','{1}','100','{2}','{3}', '{4}','{5}','0') ".format(folder,size,club,comp,status,InRange))
+    folder = folder.replace('\'', '\\\'')
+    cur.execute("INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, status, InRange, sync_status) "
+                "VALUES ('{0}','{1}','100','{2}','{3}', '{4}','{5}','0') ".format(folder, size, club, comp, status, InRange))
     cur.close()
     conn.close()
+
 
 def write_mass(array):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
     values = 'INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, status, InRange, sync_status, time) VALUES '
     for i in array:
-        values = values + '(\'' + \
-                 str(i[0].replace('\'','\\\'')) + '\',\'' + \
+        values = values + '(\'' +\
+                 str(i[0].replace('\'', '\\\'')) + '\',\'' + \
                  str(i[1]) + \
                  '\',\'100\',\'' + \
                  str(i[2]) + '\',\'' + \
@@ -215,11 +227,12 @@ def write_mass(array):
                  str(i[4]) + '\',\'' + \
                  str(i[5]) + \
                  '\',\'0\',\'' + \
-                 str(get_datetime()) +'\'),'
-    values=values[0:-1]
+                 str(get_datetime()) + '\'),'
+    values = values[0:-1]
     cur.execute(values)
     cur.close()
     conn.close()
+
 
 def del_folder(club, comp, folder):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
