@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/comparegames.py" afterPath="$PROJECT_DIR$/hddinfo/comparegames.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/create_file.py" afterPath="$PROJECT_DIR$/hddinfo/create_file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/ideals.py" afterPath="$PROJECT_DIR$/hddinfo/ideals.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hardinfo/mysqlhard.py" afterPath="$PROJECT_DIR$/hardinfo/mysqlhard.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/mysqlwork.py" afterPath="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyPyScripts.iml" afterPath="$PROJECT_DIR$/.idea/MyPyScripts.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hardinfo/parse_report.py" afterPath="$PROJECT_DIR$/hardinfo/parse_report.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/showgames.py" afterPath="$PROJECT_DIR$/hddinfo/showgames.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/steam.py" afterPath="$PROJECT_DIR$/hddinfo/steam.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hddinfo/test.py" afterPath="$PROJECT_DIR$/hddinfo/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361140714028" ignored="false" />
+    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361201849432" ignored="false" />
     <file path="/pyt_svc.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588573795" ignored="false" />
     <file path="/a.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587961300" ignored="false" />
     <file path="/a.coffee" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587963343" ignored="false" />
@@ -33,10 +27,6 @@
     <file path="$PROJECT_DIR$/AVP/show_torrent.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/AVP/test.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/AVP/utorrent.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/modules.xml" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/other.xml" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/testrunner.xml" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/PythonApplication1/PythonApplication1.sln" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/PythonApplication1/PythonApplication1/PythonApplication1.pyproj" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="$PROJECT_DIR$/torrent_UI/show.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
@@ -50,7 +40,7 @@
     <file path="$PROJECT_DIR$/TEST/wake_comp.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588020627" ignored="false" />
     <file path="/comparegames.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361144971286" ignored="false" />
     <file path="/restore_game.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360599751409" ignored="false" />
-    <file path="/parse_report.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361141301669" ignored="false" />
+    <file path="/parse_report.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361203075604" ignored="false" />
     <file path="/mysqlhard.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361141125050" ignored="false" />
     <file path="/create_file.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361141558020" ignored="false" />
     <file path="/showgames.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361142743767" ignored="false" />
@@ -80,10 +70,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="parse_report.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="comparegames.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="88" column="20" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parse_report.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="50" column="21" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.8056872">
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -91,24 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comparegames.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+      <file leaf-file-name="mysqlhard.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hardinfo/mysqlhard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="0" selection-start="6374" selection-end="6374" vertical-scroll-proportion="1.1596154">
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysqlwork.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="16" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +131,6 @@
         <option value="$PROJECT_DIR$/hddinfo/restore_game.py" />
         <option value="$PROJECT_DIR$/service/pyt_svc.py" />
         <option value="$PROJECT_DIR$/hardinfo/mysqlhard.py" />
-        <option value="$PROJECT_DIR$/hardinfo/parse_report.py" />
         <option value="$PROJECT_DIR$/hddinfo/create_file.py" />
         <option value="$PROJECT_DIR$/hddinfo/ideals.py" />
         <option value="$PROJECT_DIR$/hddinfo/showgames.py" />
@@ -153,14 +138,15 @@
         <option value="$PROJECT_DIR$/hddinfo/steam.py" />
         <option value="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
         <option value="$PROJECT_DIR$/hddinfo/comparegames.py" />
+        <option value="$PROJECT_DIR$/hardinfo/parse_report.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
+    <option name="width" value="1696" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -312,14 +298,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="232" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="232" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="233" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="233" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="907" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="907" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="907" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="233" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="231" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
@@ -332,8 +318,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -354,7 +340,7 @@
       <recent name="C:\Python27\Example\MyPyScripts\AVP" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.comparegames">
+  <component name="RunManager" selected="Python.parse_report">
     <configuration default="false" name="vk" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -758,18 +744,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25307798" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25198638" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7463026" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19440459" sideWeight="0.746922" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20195839" sideWeight="0.7480136" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39611873" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25240055" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4487004" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44835415" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423207" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -881,11 +867,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hardinfo/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0996483" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gameinfo/add_game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -901,100 +882,77 @@
         <state line="27" column="4" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://Y:/Python/files/hardinfo/parse_report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="42" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.6028369">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="10" selection-start="1222" selection-end="1222" vertical-scroll-proportion="1.3156499">
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="38" column="10" selection-start="1222" selection-end="1222" vertical-scroll-proportion="1.3156499" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/ideals.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="550" selection-end="550" vertical-scroll-proportion="1.2175066">
-          <folding />
-        </state>
+        <state line="27" column="37" selection-start="550" selection-end="550" vertical-scroll-proportion="1.2175066" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/create_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="39" selection-start="2143" selection-end="2143" vertical-scroll-proportion="2.525199">
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+        <state line="56" column="39" selection-start="2143" selection-end="2143" vertical-scroll-proportion="2.525199" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/restore_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="133" selection-end="133" vertical-scroll-proportion="0.27055702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="56" selection-start="136" selection-end="136" vertical-scroll-proportion="-4.4111404" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/steam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.23351648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="7" selection-start="66" selection-end="66" vertical-scroll-proportion="0.09018568" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="16" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="20" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://U:/Python/files/hardinfo/parse_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/mysqlhard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="712" selection-end="712" vertical-scroll-proportion="0.63129973">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/restore_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="133" selection-end="133" vertical-scroll-proportion="0.27055702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="56" selection-start="136" selection-end="136" vertical-scroll-proportion="-4.4111404">
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/steam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.23351648">
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="66" selection-end="66" vertical-scroll-proportion="0.09018568">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="50" column="21" selection-start="2184" selection-end="2184" vertical-scroll-proportion="0.8056872">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/mysqlwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="16" selection-start="4812" selection-end="4812" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="0" selection-start="6374" selection-end="6374" vertical-scroll-proportion="1.1596154">
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
           </folding>
         </state>
       </provider>

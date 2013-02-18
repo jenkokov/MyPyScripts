@@ -36,7 +36,10 @@ def main():
         except:
             continue
 
-    spd_count = int(config.get('DMI', 'Memory Controller|Memory Controller Properties|Memory Slots'))
+    try:
+        spd_count = int(config.get('DMI', 'Memory Controller|Memory Controller Properties|Memory Slots'))
+    except:
+        spd_count = 4
 
     for i in range(1, spd_count + 1):
         name = 'SPD' + str(i)
