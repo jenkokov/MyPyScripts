@@ -1,6 +1,17 @@
+# -*- coding: utf-8 -*-
 import sys
 import mysqlwork
 import datetime
+import logging
+import os
+
+general_log = 'C:\\dslogon\\general.log'
+if not os.path.exists(general_log):
+    os.makedirs('C:\\dslogon')
+    f = open(general_log, 'a')
+    f.close()
+logging.basicConfig(filename=general_log, level=logging.INFO,
+                    format='%(asctime)s: [showgames.py] [%(levelname)s] %(message)s')
 
 mysql_count = 0
 
@@ -96,19 +107,19 @@ def info_club(club):
             not_exist.sort()
             not_need.sort()
             for i in not_exist:
-                print '\t{1}. {0} not exist!'.format(i.upper(), j).ljust(35, '.') + ' <NONE>'
-                f.write('\t{1}. {0} not exist!\n'.format(i.upper(), j))
+                print '\t{1}. NO EXISTS folder {0}'.format(i.upper(), j).ljust(45, '.') + ' <NONE>'
+                f.write('\t{1}. NO EXISTS {0}'.format(i.upper(), j).ljust(45, '.') + ' <NONE>\n')
                 j += 1
             for i in not_need:
-                print '\t{1}. {0} not need!'.format(i.upper(), j).ljust(35, '.') + ' ' + str(d[i].size) + ' MB'
-                f.write('\t{1}. {0} not need!'.format(i.upper(), j).ljust(35, '.') + ' ' + str(d[i].size) + ' MB\n')
+                print '\t{1}. NO NEED folder {0}'.format(i.upper(), j).ljust(45, '.') + ' ' + str(d[i].size) + ' MB'
+                f.write('\t{1}. NO NEED folder {0}'.format(i.upper(), j).ljust(45, '.') + ' ' + str(d[i].size) + ' MB\n')
                 j += 1
             for i in out_of_range:
                 if i in needs_folder:
                     ideal_size = needs_folder[i]
                     delta_size = abs(d[i].size - ideal_size)
-                    print '\t{1}. {0} not in range for '.format(i.upper(), j).ljust(35, '.') + ' {0} MB'.format(delta_size)
-                    f.write('\t{1}. {0} not in range for '.format(i.upper(), j).ljust(35, '.') + ' {0} MB\n'.format(delta_size))
+                    print '\t{1}. OUT OF RANGE folder {0}'.format(i.upper(), j).ljust(45, '.') + ' {0} MB'.format(delta_size)
+                    f.write('\t{1}. OUT OF RANGE folder {0}'.format(i.upper(), j).ljust(45, '.') + ' {0} MB\n'.format(delta_size))
                     j += 1
 
     f.close()
