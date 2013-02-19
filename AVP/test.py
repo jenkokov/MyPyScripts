@@ -1,7 +1,8 @@
-import time
-import datetime
-def get_time():
-    t = time.localtime()
-    return str(t[0])+str(t[1]).zfill(2)+str(t[2]).zfill(2)+str(t[3]).zfill(2)+str(t[4]).zfill(2)+str(t[5]).zfill(2)
+import mysqlavp
 
-print get_time()
+for i in range(1, 100):
+    check = mysqlavp.check_inbase(20, i)
+    if check == 1:
+        print 'Comp {0} exists'.format(i)
+    else:
+        print 'Comp {0} no exists'.format(i)

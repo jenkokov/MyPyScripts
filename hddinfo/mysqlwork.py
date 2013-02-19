@@ -1,5 +1,16 @@
 import pymysql
 import time
+import os
+import logging
+
+general_log = 'C:\\dslogon\\general.log'
+if not os.path.exists(general_log):
+    os.makedirs('C:\\dslogon')
+    f = open(general_log, 'a')
+    f.close()
+logging.basicConfig(filename=general_log, level=logging.INFO,
+                    format='%(asctime)s: [mysqlwork.py] [%(levelname)s] %(message)s')
+
 
 host = '172.16.10.189'
 port = 3306
@@ -42,9 +53,7 @@ while needContinue:
             needContinue = True
         else:
             needContinue = False
-            f = open('C:\\dslogon\\errors.log', 'a')
-            f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
-            f.close()
+            logging.error('Can not connect to DB on host {0}'.format(host))
 
 
 def read_all_folders(club, comp):
@@ -70,9 +79,7 @@ def read_all_folders(club, comp):
                 needContinue = True
             else:
                 needContinue = False
-                f = open('C:\\dslogon\\errors.log', 'a')
-                f.write('{0} [COMPAREGAMES] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
-                f.close()
+                logging.error('Can not connect to DB on host {0}'.format(host))
                 d = ()
     return d
 
@@ -114,9 +121,7 @@ def read(folder='pointblank', club='10'):
                 needContinue = True
             else:
                 needContinue = False
-                f = open('C:\\dslogon\\errors.log', 'a')
-                f.write('{0} [uTorrent] Error connect to DB for writing games info.\n'.format(get_datetime().ljust(25)))
-                f.close()
+                logging.error('Can not connect to DB on host {0}'.format(host))
                 f = ()
 
     return f

@@ -23,6 +23,7 @@ def main():
                    'DMI,Processors1|Processor Properties|Version,Processor',
                    'Windows Video,Windows Video1|Video Adapter Properties|Driver Version,VideoDriver',
                    'Sensor,Temperatures|CPU,temp_proc',
+                   'Sensor,Temperatures|CPU Package,temp_proc',
                    'Sensor,Temperatures|GPU Diode (DispIO),temp_video',
                    'Sensor,Temperatures|GPU Diode,temp_video',
                    'DMI,Memory Controller|Memory Controller Properties|Memory Slots,spd_count']

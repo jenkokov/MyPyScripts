@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import mysqlwork
 
 
@@ -25,12 +27,16 @@ def main():
     f.close()
     all_folders = []
     d = {}
+    sum_10 = 0
+    sum_11 = 0
+    sum_12 = 0
+    sum_20 = 0
     all_data = mysqlwork.get_ideals()
     for i in all_data:
         if i[1] not in all_folders:
             all_folders.append(i[1])
     write_log('+'.ljust(21, '-') + '+--------+--------+--------+--------+\n' +
-              '|Name'.ljust(21) + '|InClub10|InClub11|InClub12|InClub20|\n' +
+              '|Папка'.ljust(26) + '|Троя    |Лесной  |Оболонь |Академка|\n' +
               '+'.ljust(21, '-') + '+--------+--------+--------+--------+')
     for name in sorted(all_folders):
         in10 = '---'
@@ -41,15 +47,24 @@ def main():
             if i[1] == name:
                 if i[0] == 10:
                     in10 = i[2]
+                    sum_10 += i[2]
                 if i[0] == 11:
                     in11 = i[2]
+                    sum_11 += i[2]
                 if i[0] == 12:
                     in12 = i[2]
+                    sum_12 += i[2]
                 if i[0] == 20:
                     in20 = i[2]
+                    sum_20 += i[2]
         d[name] = Folder(in10, in11, in12, in20)
         write_log('|' + name.ljust(20) + '|' + str(d[name].in10).ljust(8) + '|' + str(d[name].in11).ljust(8) + '|' +
                   str(d[name].in12).ljust(8) + '|' + str(d[name].in20).ljust(8) + '|')
+    write_log('+'.ljust(21, '-') + '+--------+--------+--------+--------+')
+    write_log('|Общий размер (GB)   |' + str(float(sum_10) / 1024)[:8] +
+              '|' + str(float(sum_11) / 1024)[:8] +
+              '|' + str(float(sum_12) / 1024)[:8] +
+              '|' + str(float(sum_20) / 1024)[:8] + '|')
     write_log('+'.ljust(21, '-') + '+--------+--------+--------+--------+')
     return
 
