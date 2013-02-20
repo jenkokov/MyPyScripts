@@ -4,6 +4,7 @@ import shutil
 import win32ui
 import win32con
 
+
 def get_size(start_path = '.'):
     total_size = 0
     for dirpath, dirnames, filenames in os.walk(start_path):
@@ -14,6 +15,7 @@ def get_size(start_path = '.'):
             except:
                 return False
     return total_size
+
 
 def scan_games(size, folders, files, accuracy=100):
     size_check= True
