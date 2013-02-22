@@ -7,8 +7,8 @@ import logging
 
 
 general_log = 'C:\\dslogon\\general.log'
-if not os.path.exists(general_log):
-    os.makedirs('C:\\dslogon')
+if not os.path.exists('C:\\dslogon\\'):
+    os.makedirs('C:\\dslogon\\')
     f = open(general_log, 'a')
     f.close()
 logging.basicConfig(filename=general_log, level=logging.INFO,
