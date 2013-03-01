@@ -54,9 +54,25 @@ def workstation_auth():
     return parse(send(header, packet))
 
 
+def workstation_disconnect():
+    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
+    packet = {'name': 'workstation_disconnect', 'type': "list", 'namespace': "auth"}
+    header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
+    print parse(send(header, packet))
+    print 'Disconnected!'
+
+
+def status_check(workstation_session_id):
+    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
+    params = {'workstation_session_id': workstation_session_id}
+    packet = {'name': 'status_check', 'type': "list", 'namespace': "service", 'params': params}
+    header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
+    return parse(send(header, packet))
+
+
 def main():
+    i = 0
     while 1:
-        sleep(10)
         info_station = workstation_auth()
         if info_station:
             info_station = Workstation(info_station)
@@ -64,7 +80,15 @@ def main():
                 format(info_station.workstation_id, info_station.workstation_session_id)
             logging.info('Successful login! Workstation ID: {0}. Workstation session ID: {1}.'.
                          format(info_station.workstation_id, info_station.workstation_session_id))
+            while i < 2:
+                sleep(5)
+                status = status_check(info_station.workstation_session_id)
+                print status
+                i += 1
+            workstation_disconnect()
+            break
         else:
+            sleep(10)
             main()
 
 if __name__ == '__main__':
