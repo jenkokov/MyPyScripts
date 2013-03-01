@@ -1,6 +1,17 @@
-from time import gmtime, strftime
+from time import gmtime, strftime, sleep
 import requests
 import json
+import logging
+import os
+
+
+general_log = 'C:\\dslogon\\general.log'
+if not os.path.exists('C:\\dslogon\\'):
+    os.makedirs('C:\\dslogon\\')
+    f = open(general_log, 'a')
+    f.close()
+logging.basicConfig(filename=general_log, level=logging.INFO,
+                    format='%(asctime)s: [test_client.py] [%(levelname)s] %(message)s')
 
 url = 'http://app.dev.central.itl/dev1/'
 
@@ -30,25 +41,31 @@ def parse(response):
     resp = response['response'][0]
     if 'error' in resp:
         print 'Error: ' + resp['error']['text'] + '. Code: ' + str(resp['error']['code'])
+        logging.error(resp['error']['text'] + '. Code: ' + str(resp['error']['code']))
         return False
     else:
-        comp = Workstation(resp['params'][0])
-        return comp
-
-
-def main():
-    info_station = workstation_auth()
-    if info_station:
-        print 'Successful login!\nWorkstation ID: {0}.\nWorkstation session ID: {1}.'.format(info_station.workstation_id, info_station.workstation_session_id)
+        return resp['params'][0]
 
 
 def workstation_auth():
     time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
     packet = {'name': 'workstation_auth', 'type': "list", 'namespace': "auth"}
     header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
-    response = send(header, packet)
-    return parse(response)
+    return parse(send(header, packet))
 
+
+def main():
+    while 1:
+        sleep(1)
+        info_station = workstation_auth()
+        if info_station:
+            info_station = Workstation(info_station)
+            print 'Successful login!\nWorkstation ID: {0}.\nWorkstation session ID: {1}.'. \
+                format(info_station.workstation_id, info_station.workstation_session_id)
+            logging.info('Successful login! Workstation ID: {0}. Workstation session ID: {1}.'.
+                         format(info_station.workstation_id, info_station.workstation_session_id))
+        else:
+            main()
 
 if __name__ == '__main__':
     main()
