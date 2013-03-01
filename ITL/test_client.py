@@ -56,7 +56,7 @@ def workstation_auth():
 
 def main():
     while 1:
-        sleep(1)
+        sleep(10)
         info_station = workstation_auth()
         if info_station:
             info_station = Workstation(info_station)
