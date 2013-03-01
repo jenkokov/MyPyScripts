@@ -1,9 +1,7 @@
-from time import gmtime, strftime, sleep
-import requests
-import json
+from time import sleep
 import logging
 import os
-
+from ITL.server_operation import *
 
 general_log = 'C:\\dslogon\\general.log'
 if not os.path.exists('C:\\dslogon\\'):
@@ -12,8 +10,6 @@ if not os.path.exists('C:\\dslogon\\'):
     f.close()
 logging.basicConfig(filename=general_log, level=logging.INFO,
                     format='%(asctime)s: [test_client.py] [%(levelname)s] %(message)s')
-
-url = 'http://app.dev.central.itl/dev1/'
 
 
 class Workstation():
@@ -28,15 +24,6 @@ class Workstation():
         self.workstation_auto_off_timeout = dictionary['workstation_auto_off_timeout']
 
 
-def send(header, packet):
-    operation = dict()
-    operation["header"] = header
-    operation["request"] = [packet]
-    string = "req=" + json.dumps(operation)
-    r = requests.post(url, data=string)
-    return r.json()
-
-
 def parse(response):
     resp = response['response'][0]
     if 'error' in resp:
@@ -47,32 +34,10 @@ def parse(response):
         return resp['params'][0]
 
 
-def workstation_auth():
-    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
-    packet = {'name': 'workstation_auth', 'type': "list", 'namespace': "auth"}
-    header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
-    return parse(send(header, packet))
-
-
-def workstation_disconnect():
-    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
-    packet = {'name': 'workstation_disconnect', 'type': "list", 'namespace': "auth"}
-    header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
-    print parse(send(header, packet))
-    print 'Disconnected!'
-
-
-def status_check(workstation_session_id):
-    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
-    params = {'workstation_session_id': workstation_session_id}
-    packet = {'name': 'status_check', 'type': "list", 'namespace': "service", 'params': params}
-    header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
-    return parse(send(header, packet))
-
-
 def main():
     i = 0
-    while 1:
+    need_continue = True
+    while need_continue:
         info_station = workstation_auth()
         if info_station:
             info_station = Workstation(info_station)
@@ -86,7 +51,7 @@ def main():
                 print status
                 i += 1
             workstation_disconnect()
-            break
+            need_continue = False
         else:
             sleep(10)
             main()
