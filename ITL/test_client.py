@@ -1,7 +1,8 @@
 from time import sleep
 import logging
 import os
-from ITL.server_operation import *
+from server_operation import *
+import hashlib
 
 general_log = 'C:\\dslogon\\general.log'
 if not os.path.exists('C:\\dslogon\\'):
@@ -37,24 +38,40 @@ def parse(response):
 def main():
     i = 0
     need_continue = True
+    login = 'jenko'
+    password = hashlib.md5("oknej1984").hexdigest()
+    session_type = 0
     while need_continue:
         info_station = workstation_auth()
         if info_station:
             info_station = Workstation(info_station)
-            print 'Successful login!\nWorkstation ID: {0}.\nWorkstation session ID: {1}.'. \
+            print 'Successful auth!\nWorkstation ID: {0}.\nWorkstation session ID: {1}.'. \
                 format(info_station.workstation_id, info_station.workstation_session_id)
-            logging.info('Successful login! Workstation ID: {0}. Workstation session ID: {1}.'.
+            logging.info('Successful auth! Workstation ID: {0}. Workstation session ID: {1}.'.
                          format(info_station.workstation_id, info_station.workstation_session_id))
             while i < 2:
                 sleep(5)
                 status = status_check(info_station.workstation_session_id)
                 print status
                 i += 1
-            workstation_disconnect()
+            logging.info('Login: {0}. Password: {1}. Session type: {2}.'.format(login, password, session_type))
+            info_user_session = user_auth(login, password, session_type)
+            if info_user_session:
+                print 'Successful login! \nSession ID: {0}.\nUser ID: {1}'.\
+                    format(info_user_session['session_id'], info_user_session['user_id'])
+                logging.info('Successful login! Session ID: {0}. User ID: {1}'.
+                             format(info_user_session['session_id'], info_user_session['user_id']))
+                i = 0
+                while i < 2:
+                    sleep(5)
+                    status = status_check(info_station.workstation_session_id)
+                    print status
+                    i += 1
+                user_disconnect(info_user_session['session_id'], info_user_session['user_id'])
+            workstation_disconnect(info_station.workstation_session_id)
             need_continue = False
         else:
             sleep(10)
-            main()
 
 if __name__ == '__main__':
     main()
