@@ -26,7 +26,7 @@ def workstation_disconnect(workstation_session_id):
     params = {'workstation_session_id': workstation_session_id}
     packet = {'name': 'workstation_disconnect', 'type': "list", 'namespace': "auth", 'params': params}
     header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
-    print 'Disconnected!'
+    print 'Disconnect workstation. Close session with ID {0}.'.format(workstation_session_id)
     return parse(send(header, packet))
 
 
@@ -43,7 +43,7 @@ def user_disconnect(session_id, user_id):
     params = dict()
     packet = {'name': 'user_disconnect', 'type': "list", 'namespace': "auth", 'params': params}
     header = {'user_id': user_id, 'session_id': session_id, 'request_datetime': time}
-    print 'Logoff!'
+    print 'Logoff userID {0}.'.format(user_id)
     return parse(send(header, packet))
 
 
@@ -54,4 +54,11 @@ def send(header, packet):
     string = "req=" + json.dumps(operation)
     r = requests.post(url, data=string)
     #print string
-    return r.json()
+    try:
+        return r.json()
+    except:
+        print 'No JSON response from server.'
+        return False
+
+if __name__ == '__main__':
+    print 'System file! Can\'t run.'

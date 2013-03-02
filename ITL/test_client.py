@@ -26,13 +26,33 @@ class Workstation():
 
 
 def parse(response):
-    resp = response['response'][0]
-    if 'error' in resp:
-        print 'Error: ' + resp['error']['text'] + '. Code: ' + str(resp['error']['code'])
-        logging.error(resp['error']['text'] + '. Code: ' + str(resp['error']['code']))
-        return False
+    if response:
+        resp = response['response'][0]
+        if 'error' in resp:
+            print 'Error: ' + resp['error']['text'] + '. Code: ' + str(resp['error']['code'])
+            logging.error(resp['error']['text'] + '. Code: ' + str(resp['error']['code']))
+            return False
+        else:
+            return resp['params'][0]
     else:
-        return resp['params'][0]
+        return False
+
+
+def login_user(login, password, session_type, workstation_session_id):
+    i = 0
+    logging.info('Login: {0}. Password: {1}. Session type: {2}.'.format(login, password, session_type))
+    info_user_session = user_auth(login, password, session_type)
+    if info_user_session:
+        print 'Successful login! \nSession ID: {0}.\nUser ID: {1}'. \
+            format(info_user_session['session_id'], info_user_session['user_id'])
+        logging.info('Successful login! Session ID: {0}. User ID: {1}'.
+                     format(info_user_session['session_id'], info_user_session['user_id']))
+        while i < 2:
+            sleep(5)
+            status = status_check(workstation_session_id)
+            print status
+            i += 1
+        user_disconnect(info_user_session['session_id'], info_user_session['user_id'])
 
 
 def main():
@@ -54,20 +74,7 @@ def main():
                 status = status_check(info_station.workstation_session_id)
                 print status
                 i += 1
-            logging.info('Login: {0}. Password: {1}. Session type: {2}.'.format(login, password, session_type))
-            info_user_session = user_auth(login, password, session_type)
-            if info_user_session:
-                print 'Successful login! \nSession ID: {0}.\nUser ID: {1}'.\
-                    format(info_user_session['session_id'], info_user_session['user_id'])
-                logging.info('Successful login! Session ID: {0}. User ID: {1}'.
-                             format(info_user_session['session_id'], info_user_session['user_id']))
-                i = 0
-                while i < 2:
-                    sleep(5)
-                    status = status_check(info_station.workstation_session_id)
-                    print status
-                    i += 1
-                user_disconnect(info_user_session['session_id'], info_user_session['user_id'])
+            login_user(login, password, session_type, info_station.workstation_session_id)
             workstation_disconnect(info_station.workstation_session_id)
             need_continue = False
         else:
