@@ -1,6 +1,6 @@
 import pymysql
 
-host = '172.16.10.189'
+host = '172.16.18.254'
 port = 3306
 user = 'hdd_datauser'
 passwd = 'oknej1984'
@@ -18,6 +18,16 @@ def insert_data(club, comp, param, value):
         cur.execute("UPDATE hard_space SET {2}='{3}', sync_status = '0' WHERE club={0} and comp = {1}".format(club, comp, param, value))
     cur.close()
     conn.close()
+
+
+def get_free_space():
+    conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
+    cur = conn.cursor()
+    cur.execute("SELECT club, comp, diskD, time FROM hard_space ORDER BY club, comp")
+    d = cur.fetchall()
+    cur.close()
+    conn.close()
+    return d
 
 
 def check_in_base(club, comp):

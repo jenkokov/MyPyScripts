@@ -47,7 +47,7 @@ def login_user(login, password, session_type, workstation_session_id):
             format(info_user_session['session_id'], info_user_session['user_id'])
         logging.info('Successful login! Session ID: {0}. User ID: {1}'.
                      format(info_user_session['session_id'], info_user_session['user_id']))
-        while i < 2:
+        while i < 3:
             sleep(5)
             status = status_check(workstation_session_id)
             print status
@@ -69,7 +69,7 @@ def main():
                 format(info_station.workstation_id, info_station.workstation_session_id)
             logging.info('Successful auth! Workstation ID: {0}. Workstation session ID: {1}.'.
                          format(info_station.workstation_id, info_station.workstation_session_id))
-            while i < 2:
+            while i < 3:
                 sleep(5)
                 status = status_check(info_station.workstation_session_id)
                 print status
