@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import os
 import comparegames
 import pymysql
@@ -9,20 +8,20 @@ import sys
 
 def delfolder(folder):
     mysqlwork.del_folder(club, comp, folder)
-    print 'Папка \'{0}\' удалена в клубе #{1}'.format(folder, club)
+    print 'Successful deleting folder \'{0}\' for club #{1}'.format(folder, club)
 
 
 def add_new_folder(folder):
     if not os.path.exists(u'D:/Games/' + folder):
-        print 'Папка {0} не найдена!'.format(folder)
+        print 'Can not find folder {0}!'.format(folder)
         return
     size = comparegames.get_size(u'D:/Games/' + folder)
     if mysqlwork.check_inbase(folder, club) == 1:
         mysqlwork.update_size(club, folder, size)
-        print 'Папка {0} для клуба #{1} обновлена!'.format(folder.upper(), club)
+        print 'Update folder {0} in database for club #{1}!'.format(folder.upper(), club)
     else:
         mysqlwork.write_folder(folder.lower(), size, club, comp, 1, 1)
-        print 'Папка {0} для клуба #{1} добавлена!'.format(folder.upper(), club)
+        print 'Adds folder {0} in database for club #{1}!'.format(folder.upper(), club)
 
 
 def write2sql():
@@ -32,7 +31,7 @@ def write2sql():
     cur = conn.cursor()
     for word in d_dict:
         word = word.lower()
-        print 'Подсчет размера и запись в базу ' + u'D:/Games/' + word
+        print 'Calculate and write size to DB for ' + u'D:/Games/' + word
         size = comparegames.get_size(u'D:/Games/' + word)
         cur.execute("INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, Status,InRange) "
                     "VALUES ('{0}','{1}',100,'{2}', '{3}',1,1)".format(word, size, club, comp))
@@ -43,15 +42,15 @@ def write2sql():
 if __name__ == '__main__':
     ip = socket.gethostbyname(socket.gethostname())
     comp = '0'
-    club = raw_input('ID клуба (оставить пустым для использования этого клуба): ')
+    club = raw_input('Club ID (empty for this club): ')
     if club == '':
         club = ip.split('.')[2]
-    ques = raw_input('Удалить? (\'Y\' для удаления): ')
+    ques = raw_input('Deleting folder? (\'Y\' for deleting, something other for add): ')
     if ques == 'y' or ques == 'Y':
-        dfolder = raw_input('Введите папку для УДАЛЕНИЯ: ')
+        dfolder = raw_input('Input folder for deleting: ')
         delfolder(dfolder.lower())
         sys.exit()
-    nfolder = raw_input('Новая папка D:\\Games (для обновления всех папок введите \'NEW\'): ')
+    nfolder = raw_input('New folder in D:\\Games (for renew all folders type NEW): ')
     if nfolder == 'NEW':
         write2sql()
     else:

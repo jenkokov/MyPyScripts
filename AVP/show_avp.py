@@ -21,7 +21,7 @@ def get_time():
 def sendmail(mail):
     print 'Передача письма на {0}...'.format(mail)
     send_mail.send_mail(mail, 'AVP лог со всех клубов за {0}'.format(get_time()), 'Файл в прикрепленных файлах', log)
-    print 'Успешно передана почта.'
+    print 'Успешно передан.'
 
 
 def main(sorting):
@@ -55,10 +55,10 @@ def main(sorting):
 
 if __name__ == '__main__':
     log = 'D:\\log\\AVP_Summary.txt'
-    Sorting = raw_input('Сортировка (по умолчанию по времени): ')
+    Sorting = raw_input('Sorting (default by start time): ')
     if Sorting == '':
         Sorting = 'start'
-    mail = raw_input('E-mail для передачи лога (оставить пустым для пропуска): ')
+    mail = raw_input('E-mail for send logs (if no need empty): ')
     d = []
     main(Sorting)
     if mail != '':

@@ -2,6 +2,7 @@ import socket
 import mysqlgame
 import add_game
 
+
 class Game ():
     def __init__(self, EXEpath, method, ActualVersion):
         self.EXEpath=EXEpath
@@ -11,6 +12,7 @@ class Game ():
     def __repr__(self):
         f = [self.EXEpath,self.method,self.ActualVersion]
         return f
+
 
 def main():
     bad_games=[]

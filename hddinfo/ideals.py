@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import mysqlwork
 
 
@@ -36,7 +34,7 @@ def main():
         if i[1] not in all_folders:
             all_folders.append(i[1])
     write_log('+'.ljust(21, '-') + '+--------+--------+--------+--------+\n' +
-              '|Папка'.ljust(26) + '|Троя    |Лесной  |Оболонь |Академка|\n' +
+              '|Name'.ljust(21) + '|InClub10|InClub11|InClub12|InClub20|\n' +
               '+'.ljust(21, '-') + '+--------+--------+--------+--------+')
     for name in sorted(all_folders):
         in10 = '---'
@@ -61,7 +59,7 @@ def main():
         write_log('|' + name.ljust(20) + '|' + str(d[name].in10).ljust(8) + '|' + str(d[name].in11).ljust(8) + '|' +
                   str(d[name].in12).ljust(8) + '|' + str(d[name].in20).ljust(8) + '|')
     write_log('+'.ljust(21, '-') + '+--------+--------+--------+--------+')
-    write_log('|Общий размер (GB)   |' + str(float(sum_10) / 1024)[:8] +
+    write_log('|Total size (GB)'.ljust(21) + '|' + str(float(sum_10) / 1024)[:8] +
               '|' + str(float(sum_11) / 1024)[:8] +
               '|' + str(float(sum_12) / 1024)[:8] +
               '|' + str(float(sum_20) / 1024)[:8] + '|')
