@@ -14,6 +14,17 @@ def status_check(workstation_session_id):
     return parse(send(header, packet))
 
 
+def application_action(session_id, user_id, type_operation, content_id):
+    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
+    if type_operation == 'stop':
+        params = {'type': type_operation, 'dic_content_action_id': content_id}
+    else:
+        params = {'type': type_operation, 'dic_content_id': content_id}
+    packet = {'name': 'application_action', 'type': "list", 'namespace': "shell", 'params': params}
+    header = {'user_id': user_id, 'session_id': session_id, 'request_datetime': time}
+    return parse(send(header, packet))
+
+
 def workstation_auth():
     time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
     packet = {'name': 'workstation_auth', 'type': "list", 'namespace': "auth"}
@@ -45,6 +56,14 @@ def user_disconnect(session_id, user_id):
     header = {'user_id': user_id, 'session_id': session_id, 'request_datetime': time}
     print 'Logoff userID {0}.'.format(user_id)
     return parse(send(header, packet))
+
+
+def content_list(session_id, user_id):
+    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
+    params = dict()
+    packet = {'name': 'content_list', 'type': "list", 'namespace': "shell", 'params': params}
+    header = {'user_id': user_id, 'session_id': session_id, 'request_datetime': time}
+    return send(header, packet)
 
 
 def send(header, packet):
