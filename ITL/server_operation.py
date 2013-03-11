@@ -3,7 +3,7 @@ from time import strftime, gmtime
 import requests
 from test_client import *
 
-url = 'http://app.dev.central.itl/dev1/'
+url = 'http://app.test.central.itl/dev1/'
 
 
 def status_check(workstation_session_id):
@@ -56,6 +56,16 @@ def user_disconnect(session_id, user_id):
     header = {'user_id': user_id, 'session_id': session_id, 'request_datetime': time}
     print 'Logoff userID {0}.'.format(user_id)
     return parse(send(header, packet))
+
+
+def reg_file_list(session_id, user_id):
+    time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
+    params = dict()
+    packet = {'name': 'reg_file_list', 'type': "list", 'namespace': "shell", 'params': params}
+    header = {'user_id': user_id, 'session_id': session_id, 'request_datetime': time}
+    req = send(header, packet)
+    print req
+    return parse(req)
 
 
 def content_list(session_id, user_id):

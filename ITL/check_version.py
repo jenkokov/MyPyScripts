@@ -11,7 +11,7 @@ def getFileVersion(filename):
         String_File_Info = win32api.GetFileVersionInfo(filename, strInfoPath)
         return 'Version: ' + String_File_Info
     else:
-        return 'Files not found!'
+        return 'File not found.'
 
 
 def main():

@@ -1,4 +1,3 @@
-from server_operation import *
+import redmine_operations
 
-workstation_disconnect()
-
+redmine_operations.Redmine.get_redmine_auth()

@@ -31,6 +31,6 @@ def send_mail(send_to, subject, text, file):
     server.sendmail(send_from, send_to, msg.as_string())
     server.quit()
 
-    #server=smtplib.SMTP('172.16.10.254:25')
+    #server = smtplib.SMTP('172.16.10.254:25')
     #server.sendmail(send_from, send_to, msg.as_string())
     #server.quit()

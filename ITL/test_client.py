@@ -1,9 +1,9 @@
-from time import sleep
 import logging
 import os
-from server_operation import *
 import hashlib
 from random import choice
+from server_operation import *
+from time import sleep
 
 general_log = 'C:\\dslogon\\general.log'
 if not os.path.exists('C:\\dslogon\\'):
@@ -36,7 +36,10 @@ def parse(response):
             logging.error(resp['error']['text'] + '. Code: ' + str(resp['error']['code']))
             return False
         else:
-            return resp['params'][0]
+            if len(resp['params']) == 1:
+                return resp['params'][0]
+            else:
+                return resp['params']
     else:
         return False
 
@@ -88,6 +91,7 @@ def login_user(login, password, session_type, workstation_session_id):
             status = status_check(workstation_session_id)
             print status
             i += 1
+        print reg_file_list(info_user_session['session_id'], info_user_session['user_id'])
         try:
             launch_content(info_user_session['session_id'], info_user_session['user_id'])
         except:
