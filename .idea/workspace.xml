@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ITL/mysqlitl.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ITL/server_operation.py" afterPath="$PROJECT_DIR$/ITL/server_operation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyPyScripts.iml" afterPath="$PROJECT_DIR$/.idea/MyPyScripts.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ITL/mysqlitl.py" afterPath="$PROJECT_DIR$/ITL/mysqlitl.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ITL/test_client.py" afterPath="$PROJECT_DIR$/ITL/test_client.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363090552035" ignored="false" />
+    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365155176077" ignored="false" />
     <file path="/pyt_svc.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588573795" ignored="false" />
     <file path="/a.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587961300" ignored="false" />
     <file path="/a.coffee" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587963343" ignored="false" />
@@ -36,14 +37,14 @@
     <file path="/test.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362174913761" ignored="false" />
     <file path="/mysqlwork.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361144573890" ignored="false" />
     <file path="/testo.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363000578016" ignored="false" />
-    <file path="/test_client.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363110238537" ignored="false" />
+    <file path="/test_client.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365155471229" ignored="false" />
     <file path="/server_operation.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363104701265" ignored="false" />
     <file path="/free_space.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362401398336" ignored="false" />
     <file path="/check_version.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363000522728" ignored="false" />
     <file path="/send_log.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363005673885" ignored="false" />
     <file path="/send_mail.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362999745840" ignored="false" />
     <file path="/redmine.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363002289592" ignored="false" />
-    <file path="/mysqlitl.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363103347455" ignored="false" />
+    <file path="/mysqlitl.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365060733624" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <file leaf-file-name="test_client.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ITL/test_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="31" selection-start="6169" selection-end="6169" vertical-scroll-proportion="1.0651852">
+            <state line="48" column="0" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.82988167">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -82,10 +83,8 @@
       <file leaf-file-name="mysqlitl.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITL/mysqlitl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state line="32" column="127" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,10 +92,8 @@
       <file leaf-file-name="server_operation.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITL/server_operation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="20" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state line="41" column="0" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,8 +135,8 @@
         <option value="$PROJECT_DIR$/ITL/redmine.py" />
         <option value="$PROJECT_DIR$/ITL/redmine_operations.py" />
         <option value="$PROJECT_DIR$/ITL/send_log.py" />
-        <option value="$PROJECT_DIR$/ITL/server_operation.py" />
         <option value="$PROJECT_DIR$/ITL/mysqlitl.py" />
+        <option value="$PROJECT_DIR$/ITL/server_operation.py" />
         <option value="$PROJECT_DIR$/ITL/test_client.py" />
       </list>
     </option>
@@ -147,7 +144,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
+    <option name="width" value="1692" />
     <option name="height" value="1036" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -195,57 +192,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Problems" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MyPyScripts">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MyPyScripts">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT=".idea">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="MyPyScripts">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,20 +268,71 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyPyScripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyPyScripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyPyScripts">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="230" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="230" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="231" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ITL/server_operation.py" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="231" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="231" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="229" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
@@ -346,10 +343,10 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -371,7 +368,7 @@
       <recent name="C:\Python27\Example\MyPyScripts\AVP" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.server_operation">
+  <component name="RunManager" selected="Python.test_client">
     <configuration default="false" name="test_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -408,25 +405,6 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="redmine_operations" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ITL" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="MyPyScripts" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Python27\example\MyPyScripts\ITL\redmine_operations.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="server_operation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -456,6 +434,23 @@
       <module name="MyPyScripts" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ITL/mysqlitl.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="free_space" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hardinfo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="MyPyScripts" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardinfo/free_space.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -580,17 +575,17 @@
       <item index="2" class="java.lang.String" itemvalue="Python.parse_report" />
       <item index="3" class="java.lang.String" itemvalue="Python.test_client" />
       <item index="4" class="java.lang.String" itemvalue="Python.send_log" />
-      <item index="5" class="java.lang.String" itemvalue="Python.redmine_operations" />
-      <item index="6" class="java.lang.String" itemvalue="Python.server_operation" />
-      <item index="7" class="java.lang.String" itemvalue="Python.mysqlitl" />
+      <item index="5" class="java.lang.String" itemvalue="Python.server_operation" />
+      <item index="6" class="java.lang.String" itemvalue="Python.mysqlitl" />
+      <item index="7" class="java.lang.String" itemvalue="Python.free_space" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.server_operation" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_client" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mysqlitl" />
-        <item index="3" class="java.lang.String" itemvalue="Python.send_log" />
-        <item index="4" class="java.lang.String" itemvalue="Python.redmine_operations" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_client" />
+        <item index="1" class="java.lang.String" itemvalue="Python.server_operation" />
+        <item index="2" class="java.lang.String" itemvalue="Python.free_space" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mysqlitl" />
+        <item index="4" class="java.lang.String" itemvalue="Python.send_log" />
       </list>
     </recent_temporary>
   </component>
@@ -809,18 +804,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <frame x="-8" y="-8" width="1692" height="1036" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20431328" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20317821" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7463026" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20379438" sideWeight="0.7956867" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39500567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21656442" sideWeight="0.7968218" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39476678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25240055" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3643587" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3632236" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.323496" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -928,13 +923,13 @@
           <option name="timeStamp" value="5" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="944" />
+      <option name="time" value="945" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hardinfo/free_space.py">
+    <entry file="file://$PROJECT_DIR$/ITL/server_operation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="24" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" />
+        <state line="110" column="20" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/comparegames_old.py">
@@ -945,11 +940,6 @@
     <entry file="file://$PROJECT_DIR$/AVP/send_mail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="32" selection-start="250" selection-end="250" vertical-scroll-proportion="0.25468165" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/redmine/build/lib/redmine/redmine_rest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="248" column="68" selection-start="8510" selection-end="8511" vertical-scroll-proportion="0.33202356" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ITL/send_log.py">
@@ -972,64 +962,53 @@
         <state line="17" column="25" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1471" column="0" selection-start="58683" selection-end="58683" vertical-scroll-proportion="0.8231798" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/mysqlhard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="109" selection-end="109" vertical-scroll-proportion="-0.19101124">
-          <folding />
-        </state>
+        <state line="6" column="15" selection-start="109" selection-end="109" vertical-scroll-proportion="-0.19101124" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.76404494">
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.76404494" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/avp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1980" selection-end="2087" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="64" column="0" selection-start="1980" selection-end="2087" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AVP/mysqlavp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardinfo/free_space.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.936694" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ITL/mysqlitl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state line="32" column="127" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1115" column="0" selection-start="46680" selection-end="46680" vertical-scroll-proportion="0.315197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ITL/server_operation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="20" selection-start="4276" selection-end="4276" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state line="41" column="0" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ITL/test_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="31" selection-start="6169" selection-end="6169" vertical-scroll-proportion="1.0651852">
+        <state line="48" column="0" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.82988167">
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

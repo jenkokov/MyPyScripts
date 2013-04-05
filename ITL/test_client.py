@@ -1,5 +1,4 @@
 import os
-import hashlib
 from random import choice
 from server_operation import *
 from time import sleep
@@ -14,10 +13,20 @@ if not os.path.exists('C:\\dslogon\\'):
     f = open(general_log, 'a')
     f.close()
 
-settings = mysqlitl.get_settings()
-cooldown = float(settings['cooldown'])
-warn_time = float(settings['warn_time'])
-infinite = int(settings['infinite'])
+user_id = 0
+workstation_session_id = 0
+session_type = 0
+warn_time = 2.0
+
+
+def get_settings():
+    global cooldown, warn_time, infinite
+    settings = mysqlitl.get_settings()
+    cooldown = float(settings['cooldown'])
+    warn_time = float(settings['warn_time'])
+    infinite = int(settings['infinite'])
+    print 'Get settings. Cooldown: {0}. Warn_time: {1}. Infinite: {2}'.format(cooldown, warn_time, infinite)
+
 
 ip = socket.gethostbyname(socket.gethostname())
 club = ip.split('.')[2]
@@ -27,7 +36,7 @@ comp = ip.split('.')[3]
 def print_log(level, operation, string, time=0):
     if time > warn_time:
         level = 'Over time'
-        mysqlitl.insert_warning(comp, operation, time)
+        mysqlitl.insert_warning(comp, operation, time, user_id, workstation_session_id)
     f = open(general_log, 'a')
     if time != 0:
         data = '[{0}] [{1}] [{2}] {3}'.format(level.upper(), str(time)[:8], operation, string)
@@ -38,23 +47,13 @@ def print_log(level, operation, string, time=0):
     f.close()
 
 
-class Workstation():
-    def __init__(self, dictionary):
-        self.workstation_session_id = dictionary['workstation_session_id']
-        self.server_version = dictionary['server_version']
-        self.api_protocol_version = dictionary['api_protocol_version']
-        self.real_server_url = dictionary['real_server_url']
-        self.workstation_id = dictionary['workstation_id']
-        self.workstation_num = dictionary['workstation_num']
-        self.is_workstation_auto_off = dictionary['is_workstation_auto_off']
-        self.workstation_auto_off_timeout = dictionary['workstation_auto_off_timeout']
-
-
 def parse(response):
     if response:
         resp = response['response'][0]
         if 'error' in resp:
             print_log('error', 'parser', 'Error: ' + resp['error']['text'] + '. Code: ' + str(resp['error']['code']))
+            if resp['error']['code'] == '114':
+                raw_input()
             return False
         else:
             if len(resp['params']) == 1:
@@ -105,6 +104,7 @@ def launch_content(session_id, user_id, workstation_session_id):
 
 
 def login_user(login, password, session_type, workstation_session_id):
+    global user_id
     i, a = 0, 0
     info_user_session = user_auth(login, password, session_type)
     if info_user_session[0]:
@@ -127,31 +127,31 @@ def login_user(login, password, session_type, workstation_session_id):
 
 
 def main():
+    global workstation_session_id
     need_continue = True
-    #login = 'jenko'
-    #password = hashlib.md5("oknej1984").hexdigest()
-    session_type = 0
     while need_continue:
         info_station = workstation_auth()
         if info_station[0]:
             time = info_station[1]
-            info_station = Workstation(info_station[0])
+            workstation_session_id = info_station[0]['workstation_session_id']
+            workstation_id = info_station[0]['workstation_id']
             print_log('info', 'workstation_auth', 'Successful auth! Workstation ID: {0}. Workstation session ID: {1}.'
-                      .format(info_station.workstation_id, info_station.workstation_session_id), time)
+                      .format(workstation_id, workstation_session_id), time)
             i = 0
             while i < randint(2, 10):
+                get_settings()
                 user = get_user()
                 login = user['login']
                 password = user['pass']
                 if not password:
                     continue
                 sleep(cooldown)
-                status = status_check(info_station.workstation_session_id)
+                status = status_check(workstation_session_id)
                 print_log('info', 'status_check', status[0], status[1])
                 i += 1
-                login_user(login, password, session_type, info_station.workstation_session_id)
-            data = workstation_disconnect(info_station.workstation_session_id)
-            print_log('info', 'workstation_disconnect', 'Disconnect workstation with session ID {0}'.format(info_station.workstation_session_id), data[1])
+                login_user(login, password, session_type, workstation_session_id)
+            data = workstation_disconnect(workstation_session_id)
+            print_log('info', 'workstation_disconnect', 'Disconnect workstation with session ID {0}'.format(workstation_session_id), data[1])
             sleep(cooldown * 3)
             if infinite == 0:
                 need_continue = False
@@ -160,4 +160,5 @@ def main():
         else:
             sleep(cooldown * 2)
 if __name__ == '__main__':
+    get_settings()
     main()

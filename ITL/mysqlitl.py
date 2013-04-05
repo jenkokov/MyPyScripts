@@ -26,9 +26,10 @@ def get_settings():
     return dic
 
 
-def insert_warning(comp, operation, time):
+def insert_warning(comp, operation, time, user_id, session_id):
     conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db)
     cur = conn.cursor()
-    cur.execute("INSERT INTO itl_test_warnings(comp, operation, time, start_time) VALUES ('{0}','{1}','{2}','{3}') ".format(comp, operation, time, get_time()))
+    cur.execute("INSERT INTO itl_test_warnings(comp, operation, time, start_time, user_id, session_id) "
+                "VALUES ('{0}','{1}','{2}','{3}', '{4}', '{5}') ".format(comp, operation, time, get_time(), user_id, session_id))
     cur.close()
     conn.close()
