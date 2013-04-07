@@ -10,11 +10,11 @@ basic_url = settings['basic_url']
 get_user_url = settings['get_user_url']
 
 
-def status_check(workstation_session_id):
+def status_check(workstation_session_id, user_id=0, session_id=0):
     time = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
     params = {'workstation_session_id': workstation_session_id}
     packet = {'name': 'status_check', 'type': "list", 'namespace': "service", 'params': params}
-    header = {'user_id': 0, 'session_id': 0, 'request_datetime': time}
+    header = {'user_id': user_id, 'session_id': session_id, 'request_datetime': time}
     t1 = clock()
     return parse(send(header, packet)), clock() - t1
 

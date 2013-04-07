@@ -92,7 +92,7 @@ def launch_content(session_id, user_id, workstation_session_id):
         print_log('info', 'application_action', 'Successful launch content with ID {1}. dic_content_action_id: {0}'.format(dic_content_action_id, content_id), time)
         while i < randint(2, 5):
             sleep(cooldown)
-            status = status_check(workstation_session_id)
+            status = status_check(workstation_session_id, user_id, session_id)
             print_log('info', 'status_check', status[0], status[1])
             i += 1
         sleep(cooldown)
@@ -113,7 +113,7 @@ def login_user(login, password, session_type, workstation_session_id):
         print_log('info', 'user_auth', 'Successful login. Session ID: {0}. User ID: {1}'.format(session_id, user_id), info_user_session[1])
         while i < randint(2, 10):
             sleep(cooldown)
-            status = status_check(workstation_session_id)
+            status = status_check(workstation_session_id, user_id, session_id)
             print_log('info', 'status_check', status[0], status[1])
             i += 1
         while a < randint(2, 10):
