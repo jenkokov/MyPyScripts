@@ -106,7 +106,7 @@ def send(header, packet, url=basic_url):
     operation["request"] = [packet]
     string = "req=" + json.dumps(operation)
     r = requests.post(url, data=string)
-    #print string
+    print string
     try:
         return r.json()
     except:

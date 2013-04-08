@@ -54,13 +54,16 @@ def main(sorting):
 
 
 if __name__ == '__main__':
-    log = 'D:\\log\\AVP_Summary.txt'
-    Sorting = raw_input('Sorting (default by start time): ')
-    if Sorting == '':
-        Sorting = 'start'
-    mail = raw_input('E-mail for send logs (if no need empty): ')
-    d = []
-    main(Sorting)
-    if mail != '':
+    log = 'AVP_Summary.txt'
+    main('start')
+    mail_dict = ['jenko.kov@gmail.com', 'diablik86@gmail.com', 'l.masya777@gmail.com', 'hok.life@gmail.com']
+    for mail in mail_dict:
         sendmail(mail)
-    Sorting = 'start'
+    #Sorting = raw_input('Sorting (default by start time): ')
+    #if Sorting == '':
+    #    Sorting = 'start'
+    #mail = raw_input('E-mail for send logs (if no need empty): ')
+    #main(Sorting)
+    #if mail != '':
+    #    sendmail(mail)
+    #Sorting = 'start'

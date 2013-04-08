@@ -52,8 +52,6 @@ def parse(response):
         resp = response['response'][0]
         if 'error' in resp:
             print_log('error', 'parser', 'Error: ' + resp['error']['text'] + '. Code: ' + str(resp['error']['code']))
-            if resp['error']['code'] == '114':
-                raw_input()
             return False
         else:
             if len(resp['params']) == 1:
