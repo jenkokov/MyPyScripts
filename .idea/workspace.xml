@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/itl_auto/avp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/itl_auto/test.py" />
-      <change type="DELETED" beforePath="C:\scripts\MyPyScripts\AVP\send_mail_old.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\scripts\MyPyScripts\hddinfo\comparegames_old.py" afterPath="" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\__init__.py" afterPath="$PROJECT_DIR$/ITL_test/__init__.py" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\check_version.py" afterPath="$PROJECT_DIR$/ITL_test/check_version.py" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\mysqlitl.py" afterPath="$PROJECT_DIR$/ITL_test/mysqlitl.py" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\redmine_operations.py" afterPath="$PROJECT_DIR$/ITL_test/redmine_operations.py" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\send_log.py" afterPath="$PROJECT_DIR$/ITL_test/send_log.py" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\server_operation.py" afterPath="$PROJECT_DIR$/ITL_test/server_operation.py" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\test_client.py" afterPath="$PROJECT_DIR$/ITL_test/test_client.py" />
-      <change type="MOVED" beforePath="C:\scripts\MyPyScripts\ITL\testo.py" afterPath="$PROJECT_DIR$/ITL_test/testo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itl_auto/avp.py" afterPath="$PROJECT_DIR$/itl_auto/avp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TEST/test.py" afterPath="$PROJECT_DIR$/TEST/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365699853705" ignored="false" />
+    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365706852405" ignored="false" />
     <file path="/pyt_svc.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588573795" ignored="false" />
     <file path="/a.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587961300" ignored="false" />
     <file path="/a.coffee" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587963343" ignored="false" />
@@ -39,20 +30,13 @@
     <file path="/mysqlhard.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362400875018" ignored="false" />
     <file path="/create_file.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361141558020" ignored="false" />
     <file path="/showgames.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361142743767" ignored="false" />
-    <file path="/test.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362174913761" ignored="false" />
+    <file path="/test.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362948346582" ignored="false" />
     <file path="/mysqlwork.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1361144573890" ignored="false" />
-    <file path="/testo.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363000578016" ignored="false" />
-    <file path="/test_client.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365342764900" ignored="false" />
-    <file path="/server_operation.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365342630382" ignored="false" />
+    <file path="/testo.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362220429563" ignored="false" />
+    <file path="/test_client.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362230008058" ignored="false" />
+    <file path="/server_operation.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362230436600" ignored="false" />
     <file path="/free_space.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362401398336" ignored="false" />
-    <file path="/check_version.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363000522728" ignored="false" />
-    <file path="/send_log.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365672728121" ignored="false" />
-    <file path="/send_mail.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362999745840" ignored="false" />
-    <file path="/redmine.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1363002289592" ignored="false" />
-    <file path="/mysqlitl.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365060733624" ignored="false" />
-    <file path="/Python Console" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365587089437" ignored="false" />
-    <file path="/d_clear.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365670468838" ignored="false" />
-    <file path="/avp.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365702242053" ignored="false" />
+    <file path="/avp.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365714641200" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +64,19 @@
       <file leaf-file-name="avp.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/itl_auto/avp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="179" selection-end="179" vertical-scroll-proportion="0.13972603">
+            <state line="9" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.092057765">
               <folding>
                 <element signature="e#24#51#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d_clear.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="164" selection-end="650" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,30 +105,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
+        <option value="$PROJECT_DIR$/AVP/avp.py" />
+        <option value="$PROJECT_DIR$/hddinfo/showgames.py" />
+        <option value="$USER_HOME$/.PyCharm20/system/python_stubs/-762174762/__builtin__.py" />
+        <option value="$PROJECT_DIR$/ITL/test.py" />
+        <option value="$PROJECT_DIR$/ITL/testo.py" />
+        <option value="$PROJECT_DIR$/ITL/server_operation.py" />
+        <option value="$PROJECT_DIR$/hardinfo/mysqlhard.py" />
+        <option value="$PROJECT_DIR$/hardinfo/free_space.py" />
+        <option value="$PROJECT_DIR$/ITL/test_client.py" />
         <option value="$PROJECT_DIR$/gameinfo/check_version.py" />
         <option value="$PROJECT_DIR$/AVP/show_avp.py" />
         <option value="$PROJECT_DIR$/hddinfo/create_file.py" />
         <option value="$PROJECT_DIR$/hddinfo/ideals.py" />
-        <option value="$PROJECT_DIR$/ITL/check_version.py" />
-        <option value="$PROJECT_DIR$/ITL/testo.py" />
-        <option value="$PROJECT_DIR$/ITL/redmine.py" />
-        <option value="$PROJECT_DIR$/ITL/redmine_operations.py" />
-        <option value="$PROJECT_DIR$/ITL/mysqlitl.py" />
-        <option value="$PROJECT_DIR$/ITL/server_operation.py" />
-        <option value="$PROJECT_DIR$/ITL/test_client.py" />
-        <option value="$PROJECT_DIR$/hddinfo/d_clear.py" />
-        <option value="$PROJECT_DIR$/AVP/send_mail.py" />
-        <option value="$PROJECT_DIR$/ITL/send_log.py" />
+        <option value="$PROJECT_DIR$/TEST/test.py" />
         <option value="$PROJECT_DIR$/itl_auto/avp.py" />
-        <option value="$PROJECT_DIR$/itl_auto/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1036" />
+    <option name="width" value="1456" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -182,54 +175,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="itl_auto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AVP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -281,20 +226,68 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itl_auto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hddinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="230" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="230" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="231" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ITL/server_operation.py" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="231" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="231" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="229" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
@@ -305,10 +298,10 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -323,7 +316,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Python27\example\MyPyScripts\ITL" />
       <recent name="C:\Python27\example\MyPyScripts\hddinfo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -344,58 +336,56 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ITL/test_client.py" />
       <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="server_operation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="free_space" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ITL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hardinfo" />
       <option name="IS_MODULE_SDK" value="true" />
       <module name="MyPyScripts" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ITL/server_operation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardinfo/free_space.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="d_clear" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="mysqlhard" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hddinfo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hardinfo" />
       <option name="IS_MODULE_SDK" value="true" />
       <module name="MyPyScripts" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hddinfo/d_clear.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardinfo/mysqlhard.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="send_log" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ITL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TEST" />
       <option name="IS_MODULE_SDK" value="true" />
       <module name="MyPyScripts" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ITL/send_log.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TEST/test.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -536,18 +526,18 @@
       <item index="1" class="java.lang.String" itemvalue="Python.pyt_svc" />
       <item index="2" class="java.lang.String" itemvalue="Python.parse_report" />
       <item index="3" class="java.lang.String" itemvalue="Python.test_client" />
-      <item index="4" class="java.lang.String" itemvalue="Python.server_operation" />
-      <item index="5" class="java.lang.String" itemvalue="Python.d_clear" />
-      <item index="6" class="java.lang.String" itemvalue="Python.send_log" />
+      <item index="4" class="java.lang.String" itemvalue="Python.free_space" />
+      <item index="5" class="java.lang.String" itemvalue="Python.mysqlhard" />
+      <item index="6" class="java.lang.String" itemvalue="Python.test" />
       <item index="7" class="java.lang.String" itemvalue="Python.avp" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.avp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.send_log" />
-        <item index="2" class="java.lang.String" itemvalue="Python.d_clear" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.free_space" />
         <item index="3" class="java.lang.String" itemvalue="Python.test_client" />
-        <item index="4" class="java.lang.String" itemvalue="Python.server_operation" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mysqlhard" />
       </list>
     </recent_temporary>
   </component>
@@ -717,27 +707,7 @@
       <created>1362402139714</created>
       <updated>1362402139714</updated>
     </task>
-    <task id="LOCAL-00036" summary="Revision#50&#10;">
-      <created>1362472827958</created>
-      <updated>1362472827958</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Revision#51&#10;">
-      <created>1362580596798</created>
-      <updated>1362580596798</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Revision#52&#10;">
-      <created>1363014622503</created>
-      <updated>1363014622503</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Revision#55&#10;">
-      <created>1365672124596</created>
-      <updated>1365672124597</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Revision#55.1&#10;">
-      <created>1365672828423</created>
-      <updated>1365672828423</updated>
-    </task>
-    <option name="localTasksCounter" value="41" />
+    <option name="localTasksCounter" value="36" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -774,25 +744,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="886" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14188422" sideWeight="0.49544072" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20656635" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7463026" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19277845" sideWeight="0.8581158" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39476678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16857962" sideWeight="0.79343367" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39500567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20224719" sideWeight="0.49924013" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36095345" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25240055" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36662108" sideWeight="0.49573106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.323496" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280363" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -836,7 +806,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revision#55.1&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revision#49&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -849,6 +819,11 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Revision#17" />
+    <MESSAGE value="Revision#20" />
+    <MESSAGE value="Revision#21" />
+    <MESSAGE value="Revision#22" />
+    <MESSAGE value="Revision#24" />
     <MESSAGE value="Revision#25" />
     <MESSAGE value="Revision#26" />
     <MESSAGE value="Revision#27" />
@@ -869,11 +844,6 @@
     <MESSAGE value="Revision#45&#10;" />
     <MESSAGE value="Revision#46&#10;" />
     <MESSAGE value="Revision#49&#10;" />
-    <MESSAGE value="Revision#50&#10;" />
-    <MESSAGE value="Revision#51&#10;" />
-    <MESSAGE value="Revision#52&#10;" />
-    <MESSAGE value="Revision#55&#10;" />
-    <MESSAGE value="Revision#55.1&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -893,132 +863,96 @@
           <option name="timeStamp" value="5" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="945" />
+      <option name="time" value="941" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5369863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TEST/show_comp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.56027395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameinfo/add_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gameinfo/check_version.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="4" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.06408346" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameinfo/mysqlgame.py">
+    <entry file="file://$PROJECT_DIR$/gameinfo/add_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gamerestore/files_check.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.024657534">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.114754096" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardinfo/parse_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="2547" selection-end="2547" vertical-scroll-proportion="1.4947839" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hardinfo/free_space.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="24" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.7457627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/comparegames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="477" selection-end="477" vertical-scroll-proportion="-4.517544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/create_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/ideals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="690" selection-end="690" vertical-scroll-proportion="-0.4403509" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/restore_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.04385965" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/PIL/JpegImagePlugin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="381" column="34" selection-start="13092" selection-end="13092" vertical-scroll-proportion="-0.7505721" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TEST/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="126" selection-end="126" vertical-scroll-proportion="0.16927454">
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="61" column="120" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.024182077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/steam.py">
+    <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hddinfo/test_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="10" column="0" selection-start="164" selection-end="650" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/torrent_UI/show.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/show_avp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AVP/send_mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itl_auto/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="14" selection-start="840" selection-end="840" vertical-scroll-proportion="0.981378">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itl_auto/avp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="179" selection-end="179" vertical-scroll-proportion="0.13972603">
+        <state line="9" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.092057765">
           <folding>
             <element signature="e#24#51#0" expanded="true" />
           </folding>
