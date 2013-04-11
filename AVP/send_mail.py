@@ -6,7 +6,7 @@ from email.MIMEText import MIMEText
 from email.Utils import COMMASPACE, formatdate
 from email import Encoders
 
-send_from = 'jenko.kov@gmail.com'
+send_from = 'jenko@itland.net.ua'
 
 
 def send_mail(send_to, subject, text, file):

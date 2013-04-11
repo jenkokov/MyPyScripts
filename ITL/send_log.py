@@ -8,13 +8,15 @@ from email.MIMEText import MIMEText
 from email.Utils import COMMASPACE, formatdate
 from email import Encoders
 
-send_from = 'Test comp'
+send_from = 'jenko@itland.net.ua'
+comp_name = os.environ['COMPUTERNAME']
+print comp_name
 
 
 def send_mail(send_to, subject, text, file):
 
     msg = MIMEMultipart()
-    msg['From'] = 'ITLand test comp'
+    msg['From'] = 'ITLand test comp ' + comp_name + ' <jenko@itland.net.ua>'
     msg['To'] = send_to
     msg['Date'] = formatdate(localtime=True)
     msg['Subject'] = subject
