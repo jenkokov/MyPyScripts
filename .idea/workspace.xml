@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="061e1c5d-8527-4d99-9350-d60de577a664" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/itl_auto/clean_block.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/itl_auto/global.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itl_auto/avp.py" afterPath="$PROJECT_DIR$/itl_auto/avp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TEST/test.py" afterPath="$PROJECT_DIR$/TEST/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyPyScripts.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365706852405" ignored="false" />
+    <file path="/Dummy.txt" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365776949779" ignored="false" />
     <file path="/pyt_svc.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360588573795" ignored="false" />
     <file path="/a.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587961300" ignored="false" />
     <file path="/a.coffee" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1360587963343" ignored="false" />
@@ -36,7 +36,7 @@
     <file path="/test_client.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362230008058" ignored="false" />
     <file path="/server_operation.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362230436600" ignored="false" />
     <file path="/free_space.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1362401398336" ignored="false" />
-    <file path="/avp.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365714641200" ignored="false" />
+    <file path="/avp.py" changelist="061e1c5d-8527-4d99-9350-d60de577a664" time="1365777364345" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +64,29 @@
       <file leaf-file-name="avp.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/itl_auto/avp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.092057765">
+            <state line="38" column="19" selection-start="814" selection-end="814" vertical-scroll-proportion="0.71364987">
               <folding>
                 <element signature="e#24#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.ini" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/itl_auto/global.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="15" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avp.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AVP/avp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="41" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hddinfo/mysqlwork.py" />
         <option value="$PROJECT_DIR$/AVP/avp.py" />
         <option value="$PROJECT_DIR$/hddinfo/showgames.py" />
         <option value="$USER_HOME$/.PyCharm20/system/python_stubs/-762174762/__builtin__.py" />
@@ -121,14 +140,15 @@
         <option value="$PROJECT_DIR$/hddinfo/ideals.py" />
         <option value="$PROJECT_DIR$/TEST/test.py" />
         <option value="$PROJECT_DIR$/itl_auto/avp.py" />
+        <option value="$PROJECT_DIR$/itl_auto/global.ini" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
+    <option name="width" value="1696" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -175,6 +195,68 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itl_auto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hddinfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyPyScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AVP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -226,68 +308,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="itl_auto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyPyScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hddinfo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="230" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="230" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="231" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="231" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ITL/server_operation.py" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="231" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="231" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="229" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
@@ -300,8 +334,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -522,14 +556,14 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Python.showgames" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pyt_svc" />
-      <item index="2" class="java.lang.String" itemvalue="Python.parse_report" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_client" />
-      <item index="4" class="java.lang.String" itemvalue="Python.free_space" />
-      <item index="5" class="java.lang.String" itemvalue="Python.mysqlhard" />
-      <item index="6" class="java.lang.String" itemvalue="Python.test" />
-      <item index="7" class="java.lang.String" itemvalue="Python.avp" />
+      <item index="0" class="java.lang.String" itemvalue="Python.test_client" />
+      <item index="1" class="java.lang.String" itemvalue="Python.free_space" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mysqlhard" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.avp" />
+      <item index="5" class="java.lang.String" itemvalue="Python.showgames" />
+      <item index="6" class="java.lang.String" itemvalue="Python.pyt_svc" />
+      <item index="7" class="java.lang.String" itemvalue="Python.parse_report" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -744,14 +778,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20656635" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20544836" sideWeight="0.49571604" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.7463026" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16857962" sideWeight="0.79343367" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17074664" sideWeight="0.7945517" order="0" side_tool="false" content_ui="combo" x="586" y="70" width="267" height="729" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39500567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18115056" sideWeight="0.31626847" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25240055" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -867,16 +901,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AVP/utorrent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameinfo/check_version.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.06408346" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gameinfo/add_game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -922,25 +946,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.04385965" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Lib/site-packages/PIL/JpegImagePlugin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="34" selection-start="13092" selection-end="13092" vertical-scroll-proportion="-0.7505721" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TEST/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="126" selection-end="126" vertical-scroll-proportion="0.16927454">
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="7" column="18" selection-start="126" selection-end="126" vertical-scroll-proportion="0.16927454" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/showgames.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="120" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.024182077">
-          <folding />
-        </state>
+        <state line="61" column="120" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.024182077" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hddinfo/d_clear.py">
@@ -950,9 +963,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hddinfo/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AVP/avp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="41" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itl_auto/global.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="15" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/itl_auto/avp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.092057765">
+        <state line="38" column="19" selection-start="814" selection-end="814" vertical-scroll-proportion="0.71364987">
           <folding>
             <element signature="e#24#51#0" expanded="true" />
           </folding>
