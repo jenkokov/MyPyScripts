@@ -99,7 +99,10 @@ def info_club(club):
             try:
                 date = d[out_of_range[0]].time
             except:
-                date = d[not_exist[0]].time
+                try:
+                    date = d[not_exist[0]].time
+                except:
+                    date = d[not_need[0]].time
             print '\nErrors on {0} comp (last scan at {1}):'.format(machine, date)
             f.write('\nErrors on {0} comp (last scat at {1}):\n'.format(machine, date))
             j = 1

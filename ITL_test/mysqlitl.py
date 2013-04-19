@@ -1,7 +1,7 @@
 import pymysql
 import time
 
-host = '172.16.18.254'
+host = '172.16.10.189'
 port = 3306
 user = 'hdd_datauser'
 passwd = 'oknej1984'

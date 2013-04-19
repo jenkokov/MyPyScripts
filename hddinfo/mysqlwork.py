@@ -213,7 +213,7 @@ def write_folder(folder, size, club, comp, status='0', InRange='1'):
     cur = conn.cursor()
     folder = folder.replace('\'', '\\\'')
     cur.execute("INSERT INTO hdd_space(Folder, Size, accuracy, Club, Comp, status, InRange, sync_status) "
-                "VALUES ('{0}','{1}','100','{2}','{3}', '{4}','{5}','0') ".format(folder, size, club, comp, status, InRange))
+                "VALUES ('{0}','{1}','500','{2}','{3}', '{4}','{5}','0') ".format(folder, size, club, comp, status, InRange))
     cur.close()
     conn.close()
 
@@ -226,7 +226,7 @@ def write_mass(array):
         values = values + '(\'' +\
                  str(i[0].replace('\'', '\\\'')) + '\',\'' + \
                  str(i[1]) + \
-                 '\',\'100\',\'' + \
+                 '\',\'500\',\'' + \
                  str(i[2]) + '\',\'' + \
                  str(i[3]) + '\',\'' + \
                  str(i[4]) + '\',\'' + \

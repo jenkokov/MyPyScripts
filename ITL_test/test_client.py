@@ -82,6 +82,7 @@ def get_content_id_dict(session_id, user_id):
 
 def launch_content(session_id, user_id, workstation_session_id):
     content_id = choice(get_content_id_dict(session_id, user_id))
+    #content_id = 1077
     dic_content_action_id = application_action(session_id, user_id, 'start', content_id)
     time = dic_content_action_id[1]
     dic_content_action_id = dic_content_action_id[0]['dic_content_action_id']
