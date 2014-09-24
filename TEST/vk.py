@@ -46,7 +46,7 @@ def main():
 
 if __name__ == '__main__':
     email = 'jenko.kov@gmail.com'
-    password = 'nadker33#'
+    password = 'TESTPASS'
     opener = urllib2.build_opener(
     urllib2.HTTPCookieProcessor(cookielib.CookieJar()),
     urllib2.HTTPRedirectHandler())
